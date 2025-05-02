@@ -1,0 +1,352 @@
+[
+  {
+    "question": "Mình muốn đặt tour du lịch Phú Quốc 4 ngày 3 đêm, các bạn có tour nào phù hợp không?",
+    "answer": "Chắc chắn rồi ạ! Chúng mình có nhiều tour Phú Quốc 4 ngày 3 đêm với nhiều mức giá khác nhau, từ bình dân đến cao cấp.  Bạn muốn đi theo tour ghép hay tour riêng?  Bạn có yêu cầu gì đặc biệt về khách sạn, hoạt động hay phương tiện di chuyển không ạ? Cung cấp thêm thông tin để mình tư vấn chính xác hơn nhé!",
+    "tags": [
+      "tour_booking"
+    ]
+  },
+  {
+    "question": "Tour du lịch Sapa có những loại nào và giá cả ra sao?",
+    "answer": "Tour Sapa rất đa dạng, từ tour trekking khám phá bản làng, tour nghỉ dưỡng ở resort cao cấp đến tour kết hợp tham quan nhiều điểm đến khác. Giá tour Sapa thường dao động từ 1.5 triệu đến 5 triệu đồng/người/2 ngày 1 đêm, tùy thuộc vào loại hình tour, khách sạn và các dịch vụ đi kèm. Bạn muốn tìm hiểu thêm về loại tour nào cụ thể không ạ?",
+    "tags": [
+      "tour_booking"
+    ]
+  },
+  {
+    "question": "Đặt tour du lịch cần chuẩn bị những gì?",
+    "answer": "Để đặt tour, bạn cần chuẩn bị giấy tờ tùy thân như chứng minh thư hoặc hộ chiếu.  Nên đặt tour trước khoảng 1-2 tuần để đảm bảo có chỗ và giá tốt. Bạn cũng cần chuẩn bị một khoản phí đặt cọc, phần còn lại có thể thanh toán trước hoặc sau khi kết thúc tour.  Hãy liên hệ với chúng mình để được hỗ trợ thêm nhé!",
+    "tags": [
+      "tour_booking"
+    ]
+  },
+  {
+    "question": "Tôi muốn đặt một tour riêng cho gia đình 5 người đi Đà Lạt, các bạn có thể tư vấn giúp tôi không?",
+    "answer": "Rất vui được hỗ trợ bạn!  Để tư vấn tour riêng cho gia đình 5 người đi Đà Lạt, mình cần biết thêm thông tin như thời gian đi, sở thích (ví dụ: tham quan, nghỉ dưỡng, ẩm thực...), ngân sách dự kiến và các yêu cầu khác.  Bạn cho mình biết thêm thông tin để mình lên kế hoạch phù hợp nhất nhé!",
+    "tags": [
+      "tour_booking"
+    ]
+  },
+  {
+    "question": "Làm thế nào để biết được lịch trình cụ thể của tour?",
+    "answer": "Sau khi đặt tour thành công, bạn sẽ nhận được xác nhận đặt tour qua email hoặc tin nhắn. Trong xác nhận đặt tour sẽ có lịch trình chi tiết của tour, bao gồm thời gian, địa điểm và các hoạt động cụ thể.  Bạn cũng có thể liên hệ với bộ phận chăm sóc khách hàng để được hỗ trợ nếu cần.",
+    "tags": [
+      "tour_booking"
+    ]
+  },
+  {
+    "question": "Tôi có thể hủy tour đã đặt không và điều kiện ra sao?",
+    "answer": "Bạn có thể hủy tour, tuy nhiên sẽ có phí hủy tour tùy thuộc vào thời gian hủy và chính sách của từng tour.  Thông thường, càng hủy sớm thì phí hủy càng thấp. Vui lòng liên hệ với chúng mình để biết thêm chi tiết về chính sách hủy tour và phí áp dụng.",
+    "tags": [
+      "tour_booking"
+    ]
+  },
+  {
+    "question": "Hình thức thanh toán đặt tour của các bạn có những gì?",
+    "answer": "Chúng mình chấp nhận nhiều hình thức thanh toán như chuyển khoản ngân hàng, thanh toán qua ví điện tử (Momo, ZaloPay,...), hoặc thanh toán trực tiếp bằng tiền mặt.  Bạn có thể lựa chọn hình thức thanh toán phù hợp nhất với mình.",
+    "tags": [
+      "tour_booking"
+    ]
+  },
+  {
+    "question": "Tôi muốn đặt tour nhưng không biết nên chọn tour nào cho phù hợp?",
+    "answer": "Mình hiểu! Để tư vấn được chính xác, bạn cho mình biết thêm thông tin nhé:  Điểm đến mong muốn? Thời gian đi?  Ngân sách dự kiến?  Sở thích (ví dụ: ưa thích hoạt động ngoài trời, nghỉ dưỡng thư giãn, khám phá văn hóa...)?  Số lượng người đi?",
+    "tags": [
+      "tour_booking"
+    ]
+  },
+  {
+    "question": "Tour du lịch có bao gồm ăn uống và phương tiện di chuyển không?",
+    "answer": "Tùy thuộc vào từng tour mà sẽ có các dịch vụ đi kèm khác nhau. Thông thường, các tour sẽ bao gồm ăn uống (số bữa ăn sẽ được ghi rõ trong chi tiết tour) và phương tiện di chuyển (xe ô tô, xe máy...).  Tuy nhiên, một số tour chỉ bao gồm phương tiện di chuyển hoặc ăn uống.  Hãy kiểm tra kỹ thông tin chi tiết của từng tour trước khi đặt nhé!",
+    "tags": [
+      "tour_booking"
+    ]
+  },
+  {
+    "question": "Nếu tôi muốn thay đổi lịch trình tour đã đặt thì sao?",
+    "answer": "Việc thay đổi lịch trình tour phụ thuộc vào nhiều yếu tố và khả năng thực tế. Bạn vui lòng liên hệ với chúng tôi sớm nhất có thể để được hỗ trợ.  Chúng tôi sẽ cố gắng hết sức để đáp ứng yêu cầu của bạn, tuy nhiên, việc thay đổi có thể dẫn đến phát sinh chi phí hoặc không thể thực hiện được tùy theo từng trường hợp cụ thể.",
+    "tags": [
+      "tour_booking"
+    ]
+  },
+  {
+    "question": "Mức giá phòng khách sạn ở Hội An khoảng bao nhiêu tiền một đêm?",
+    "answer": "Giá phòng khách sạn ở Hội An rất đa dạng, tùy thuộc vào loại phòng, thời điểm và vị trí.  Một phòng khách sạn bình dân có thể dao động từ 200.000 đồng đến 500.000 đồng/đêm, trong khi các khách sạn cao cấp hơn có thể lên đến vài triệu đồng.  Mẹo nhỏ là bạn nên đặt phòng trước, đặc biệt vào mùa du lịch cao điểm để có giá tốt hơn.",
+    "tags": [
+      "pricing_payment_currency"
+    ]
+  },
+  {
+    "question": "Tôi có thể thanh toán bằng gì khi du lịch Việt Nam?",
+    "answer": "Tại Việt Nam, bạn có thể thanh toán bằng tiền mặt (VND - đồng Việt Nam), thẻ tín dụng (Visa, Mastercard, JCB...), và các ứng dụng thanh toán điện tử phổ biến như Momo, ZaloPay, ViettelPay.  Tuy nhiên, một số nơi nhỏ lẻ ở vùng nông thôn có thể chỉ chấp nhận tiền mặt.  Nên chuẩn bị một ít tiền mặt để phòng trường hợp cần thiết.",
+    "tags": [
+      "pricing_payment_currency"
+    ]
+  },
+  {
+    "question": "Tỷ giá hối đoái giữa USD và VND hiện nay là bao nhiêu?",
+    "answer": "Tỷ giá USD/VND thay đổi liên tục.  Bạn nên kiểm tra tỷ giá cập nhật trên các trang web của ngân hàng hoặc các ứng dụng chuyển đổi tiền tệ trước khi đi du lịch.  Thông thường, bạn có thể đổi tiền tại các ngân hàng, các cửa hàng đổi tiền hoặc ngay tại sân bay, nhưng lưu ý rằng tỷ giá có thể khác nhau tùy địa điểm.",
+    "tags": [
+      "pricing_payment_currency"
+    ]
+  },
+  {
+    "question": "Tôi nên đổi bao nhiêu tiền Việt khi đi du lịch 5 ngày ở Hà Nội?",
+    "answer": "Số tiền cần đổi phụ thuộc vào kế hoạch chi tiêu của bạn.  Tuy nhiên, với 5 ngày ở Hà Nội, nếu bạn ở khách sạn tầm trung và ăn uống ở các quán bình dân, bạn có thể cần khoảng 3-5 triệu đồng.  Nếu muốn trải nghiệm những dịch vụ cao cấp hơn, bạn nên chuẩn bị nhiều tiền hơn.",
+    "tags": [
+      "pricing_payment_currency"
+    ]
+  },
+  {
+    "question": "Có thể dùng thẻ tín dụng quốc tế ở khắp mọi nơi tại Việt Nam không?",
+    "answer": "Hầu hết các khách sạn, nhà hàng, cửa hàng lớn ở thành phố đều chấp nhận thanh toán bằng thẻ tín dụng quốc tế. Tuy nhiên, ở một số vùng quê hoặc các cửa hàng nhỏ, việc thanh toán bằng thẻ tín dụng có thể không được hỗ trợ.  Tốt nhất là nên mang theo một ít tiền mặt để phòng trường hợp cần thiết.",
+    "tags": [
+      "pricing_payment_currency"
+    ]
+  },
+  {
+    "question": "Tôi muốn biết thêm về các loại phí phát sinh khi du lịch Việt Nam?",
+    "answer": "Phí phát sinh có thể bao gồm phí dịch vụ tại khách sạn, phí tham quan các điểm du lịch, phí vận chuyển (taxi, xe ôm), phí ăn uống, phí mua sắm...  Tùy thuộc vào kế hoạch du lịch của bạn, hãy lên ngân sách chi tiết để tránh phát sinh chi phí ngoài dự kiến.",
+    "tags": [
+      "pricing_payment_currency"
+    ]
+  },
+  {
+    "question": "Thanh toán qua ứng dụng điện tử có an toàn không?",
+    "answer": "Thanh toán qua các ứng dụng điện tử phổ biến ở Việt Nam như Momo, ZaloPay, ViettelPay khá an toàn nếu bạn tuân thủ các hướng dẫn bảo mật.  Tuy nhiên, bạn vẫn nên cẩn thận với các đường link lạ và không chia sẻ thông tin cá nhân với người lạ.",
+    "tags": [
+      "pricing_payment_currency"
+    ]
+  },
+  {
+    "question": "Nếu tôi bị mất tiền mặt trong quá trình du lịch, tôi nên làm gì?",
+    "answer": "Nếu bạn bị mất tiền mặt, hãy báo ngay cho cơ quan công an địa phương để làm thủ tục báo mất và tìm kiếm.  Bạn cũng nên liên lạc với ngân hàng để tạm khóa thẻ nếu cần thiết.  Hãy giữ lại biên lai báo mất để làm bằng chứng.",
+    "tags": [
+      "pricing_payment_currency"
+    ]
+  },
+  {
+    "question": "Đổi tiền ở sân bay có lợi hơn so với ngân hàng không?",
+    "answer": "Tỷ giá đổi tiền ở sân bay thường không có lợi bằng so với ngân hàng hoặc các cửa hàng đổi tiền uy tín bên ngoài.  Bạn nên đổi một ít tiền mặt ở sân bay để dùng tạm và đổi số tiền lớn hơn tại các ngân hàng hoặc cửa hàng đổi tiền để có tỷ giá tốt hơn.",
+    "tags": [
+      "pricing_payment_currency"
+    ]
+  },
+  {
+    "question": "Tôi có thể rút tiền mặt từ thẻ quốc tế ở Việt Nam được không?",
+    "answer": "Bạn hoàn toàn có thể rút tiền mặt từ thẻ quốc tế tại các máy ATM của các ngân hàng tại Việt Nam.  Tuy nhiên, hãy lưu ý phí rút tiền quốc tế có thể khá cao, vì vậy nên cân nhắc chi phí này khi rút tiền.",
+    "tags": [
+      "pricing_payment_currency"
+    ]
+  },
+  {
+    "question": "Chương trình thành viên của công ty du lịch của bạn có những ưu đãi gì?",
+    "answer": "Chương trình thành viên của chúng tôi mang đến nhiều ưu đãi hấp dẫn như giảm giá lên đến 20% cho các tour trong nước, tích lũy điểm thưởng để đổi quà, được hỗ trợ tư vấn riêng và cập nhật thông tin khuyến mãi sớm nhất.  Đặc biệt, thành viên thân thiết còn được hưởng những ưu đãi đặc biệt hơn nữa trong các dịp lễ tết.",
+    "tags": [
+      "promotions_membership"
+    ]
+  },
+  {
+    "question": "Làm thế nào để tôi tham gia chương trình thành viên?",
+    "answer": "Rất đơn giản! Bạn chỉ cần truy cập website của chúng tôi, điền đầy đủ thông tin vào form đăng ký thành viên là xong. Sau khi đăng ký, bạn sẽ nhận được email xác nhận và có thể bắt đầu tận hưởng những ưu đãi dành riêng cho thành viên.",
+    "tags": [
+      "promotions_membership"
+    ]
+  },
+  {
+    "question": "Tôi có thể sử dụng mã giảm giá cho nhiều lần đặt tour không?",
+    "answer": "Tùy thuộc vào từng chương trình khuyến mãi mà mã giảm giá có thể sử dụng được nhiều lần hay không. Một số mã chỉ áp dụng cho một lần đặt tour duy nhất, trong khi một số khác có thể dùng được nhiều lần, nhưng thường sẽ có giới hạn về thời gian hoặc số lượng sử dụng.  Bạn nên kiểm tra điều kiện sử dụng của mã giảm giá trước khi đặt tour.",
+    "tags": [
+      "promotions_membership"
+    ]
+  },
+  {
+    "question": "Hiện tại công ty có chương trình khuyến mãi nào không?",
+    "answer": "Hiện tại, chúng tôi đang có chương trình khuyến mãi giảm giá 15% cho tour du lịch Phú Quốc trong tháng này. Ngoài ra, chúng tôi còn có nhiều chương trình khuyến mãi khác nhau cho các tour khác nhau, bạn có thể truy cập website hoặc liên hệ trực tiếp với chúng tôi để được tư vấn chi tiết.",
+    "tags": [
+      "promotions_membership"
+    ]
+  },
+  {
+    "question": "Điểm thưởng tích lũy được có thể quy đổi ra tiền mặt không?",
+    "answer": "Điểm thưởng tích lũy không thể quy đổi trực tiếp thành tiền mặt. Tuy nhiên, bạn có thể dùng điểm thưởng để đổi lấy các phần quà hấp dẫn như voucher giảm giá, nâng hạng phòng khách sạn, hoặc các dịch vụ tiện ích khác khi đặt tour.",
+    "tags": [
+      "promotions_membership"
+    ]
+  },
+  {
+    "question": "Thời hạn sử dụng của mã giảm giá là bao lâu?",
+    "answer": "Thời hạn sử dụng của mã giảm giá thường được ghi rõ trong điều kiện sử dụng của mã. Thời gian này có thể từ vài ngày đến vài tháng, tùy thuộc vào từng chương trình khuyến mãi.  Vui lòng kiểm tra kỹ thời hạn trước khi sử dụng để tránh lãng phí.",
+    "tags": [
+      "promotions_membership"
+    ]
+  },
+  {
+    "question": "Tôi quên mật khẩu đăng nhập tài khoản thành viên thì phải làm sao?",
+    "answer": "Bạn có thể thực hiện khôi phục mật khẩu bằng cách nhấp vào mục \"Quên mật khẩu\" trên trang đăng nhập. Hệ thống sẽ hướng dẫn bạn các bước để đặt lại mật khẩu mới qua email hoặc số điện thoại đã đăng ký.",
+    "tags": [
+      "promotions_membership"
+    ]
+  },
+  {
+    "question": "Có giới hạn số lượng người được hưởng khuyến mãi khi đặt tour nhóm không?",
+    "answer": "Tùy thuộc vào từng chương trình khuyến mãi, có thể có hoặc không có giới hạn số lượng người được hưởng khuyến mãi khi đặt tour nhóm.  Bạn nên liên hệ trực tiếp với bộ phận chăm sóc khách hàng để được tư vấn cụ thể về chính sách khuyến mãi cho tour nhóm.",
+    "tags": [
+      "promotions_membership"
+    ]
+  },
+  {
+    "question": "Tôi muốn hủy tour đã đặt, liệu tôi có được hoàn lại tiền không?",
+    "answer": "Chính sách hoàn tiền phụ thuộc vào điều khoản và điều kiện của từng tour và thời điểm hủy.  Một số tour có thể hoàn tiền một phần hoặc không hoàn tiền nếu hủy trong thời gian ngắn trước ngày khởi hành.  Vui lòng liên hệ với chúng tôi để biết thêm chi tiết về chính sách hoàn tiền cho tour bạn đã đặt.",
+    "tags": [
+      "promotions_membership"
+    ]
+  },
+  {
+    "question": "Làm sao để tôi biết được mình đã tích lũy được bao nhiêu điểm thưởng?",
+    "answer": "Bạn có thể dễ dàng kiểm tra số điểm thưởng đã tích lũy bằng cách đăng nhập vào tài khoản thành viên trên website của chúng tôi.  Thông tin về điểm thưởng và lịch sử giao dịch sẽ được hiển thị rõ ràng trong phần quản lý tài khoản của bạn.",
+    "tags": [
+      "promotions_membership"
+    ]
+  },
+  {
+    "question": "Mình muốn tìm khách sạn giá rẻ ở Hội An, bạn có gợi ý nào không?",
+    "answer": "Hội An có nhiều khách sạn, nhà nghỉ giá rẻ, chỉ từ 200.000 đồng/đêm. Bạn có thể tìm trên các trang đặt phòng như Agoda, Booking.com hoặc các ứng dụng du lịch.  Lưu ý nên đặt phòng trước, nhất là mùa cao điểm để có giá tốt và phòng ưng ý nhé!",
+    "tags": [
+      "accommodation"
+    ]
+  },
+  {
+    "question": "Ở Nha Trang có loại hình lưu trú nào khác ngoài khách sạn không?",
+    "answer": "Ngoài khách sạn, Nha Trang còn có homestay, resort, villa, và cả nhà nghỉ bình dân.  Homestay sẽ cho bạn trải nghiệm văn hóa địa phương, resort thì sang trọng, còn villa phù hợp nhóm đông người.  Tùy thuộc vào ngân sách và sở thích mà bạn lựa chọn nhé!",
+    "tags": [
+      "accommodation"
+    ]
+  },
+  {
+    "question": "Tôi đi du lịch một mình, nên chọn loại chỗ ở nào cho an toàn và tiết kiệm?",
+    "answer": "Nếu đi một mình, bạn nên chọn ở hostel hoặc homestay để tiết kiệm chi phí và có cơ hội làm quen với nhiều người.  Một số hostel có phòng riêng đảm bảo sự riêng tư. Hãy kiểm tra kỹ đánh giá của khách hàng trước khi đặt phòng để đảm bảo an toàn nhé!",
+    "tags": [
+      "accommodation"
+    ]
+  },
+  {
+    "question": "Khách sạn nào ở Hà Nội có view đẹp và gần Hồ Gươm?",
+    "answer": "Nhiều khách sạn ở Hà Nội có view Hồ Gươm đẹp, ví dụ như Sofitel Legend Metropole Hanoi, Hanoi La Castela Hotel... Tuy nhiên, giá cả sẽ khá cao. Bạn có thể tìm kiếm trên các trang đặt phòng và lọc theo tiêu chí 'view' và vị trí để tìm được khách sạn phù hợp với ngân sách của mình.",
+    "tags": [
+      "accommodation"
+    ]
+  },
+  {
+    "question": "Gia đình tôi có 4 người lớn và 2 trẻ nhỏ, nên chọn loại phòng nào khi đặt khách sạn?",
+    "answer": "Gia đình bạn nên chọn phòng gia đình hoặc suite, thường có 2 phòng ngủ hoặc giường lớn, đáp ứng đủ chỗ ngủ cho cả gia đình.  Một số khách sạn còn có dịch vụ giường phụ cho trẻ em, hãy liên hệ khách sạn để được tư vấn kỹ hơn nhé!",
+    "tags": [
+      "accommodation"
+    ]
+  },
+  {
+    "question": "Tôi muốn tìm một chỗ ở gần biển ở Phú Quốc, bạn có thể gợi ý không?",
+    "answer": "Phú Quốc có rất nhiều khách sạn, resort gần biển.  Khu vực Bãi Trường và Bãi Sao có nhiều lựa chọn với các mức giá khác nhau.  Bạn có thể tìm kiếm trên các trang đặt phòng và lọc theo vị trí 'gần biển' để xem các gợi ý cụ thể.  Lưu ý kiểm tra xem khách sạn có bãi tắm riêng hay không nhé!",
+    "tags": [
+      "accommodation"
+    ]
+  },
+  {
+    "question": "Chỗ ở nào ở Đà Lạt thích hợp cho cặp đôi?",
+    "answer": "Đà Lạt có rất nhiều homestay, khách sạn nhỏ xinh, lãng mạn rất thích hợp cho các cặp đôi. Bạn có thể tìm kiếm những khách sạn có view đẹp, gần các địa điểm du lịch nổi tiếng như Hồ Xuân Hương, Thung lũng Tình Yêu.  Hãy xem hình ảnh và đánh giá của khách hàng trước khi đặt phòng nhé!",
+    "tags": [
+      "accommodation"
+    ]
+  },
+  {
+    "question": "Tôi muốn tìm một khu nghỉ dưỡng yên tĩnh ở Sapa, có gợi ý nào không?",
+    "answer": "Sapa có nhiều khu nghỉ dưỡng yên tĩnh, tách biệt với phố xá ồn ào.  Bạn có thể tìm kiếm các khu nghỉ dưỡng nằm ở vùng ngoại ô, gần các bản làng dân tộc hoặc có view nhìn ra thung lũng.  Hãy xem hình ảnh và đọc kỹ mô tả của khu nghỉ dưỡng trước khi đặt phòng nhé!",
+    "tags": [
+      "accommodation"
+    ]
+  },
+  {
+    "question": "Tôi cần đặt phòng khách sạn gấp, có trang web nào uy tín không?",
+    "answer": "Bạn có thể sử dụng các trang web đặt phòng uy tín như Booking.com, Agoda, Expedia...  Các trang này cho phép bạn đặt phòng nhanh chóng, tiện lợi và so sánh giá cả từ nhiều khách sạn khác nhau.  Tuy nhiên, hãy đọc kỹ chính sách hủy phòng trước khi đặt nhé!",
+    "tags": [
+      "accommodation"
+    ]
+  },
+  {
+    "question": "Có cách nào để tìm được chỗ ở giá tốt hơn không?",
+    "answer": "Để tìm được chỗ ở giá tốt, bạn nên đặt phòng trước, đặc biệt là vào mùa cao điểm.  So sánh giá cả trên nhiều trang web đặt phòng khác nhau.  Theo dõi các chương trình khuyến mãi, giảm giá từ khách sạn hoặc các trang đặt phòng.  Bạn cũng có thể liên hệ trực tiếp với khách sạn để thương lượng giá cả nhé!",
+    "tags": [
+      "accommodation"
+    ]
+  },
+  {
+    "question": "Món ăn nào ở Việt Nam bạn thấy ngon nhất?",
+    "answer": "Mỗi vùng miền ở Việt Nam đều có những món ăn đặc sản riêng rất hấp dẫn!  Nếu thích hải sản tươi sống, bạn nên thử các món ở các tỉnh ven biển như Nha Trang, Phú Quốc. Còn nếu thích những món ăn đậm đà hương vị đồng quê thì nên ghé thăm các tỉnh miền Tây như Cần Thơ, An Giang nhé!",
+    "tags": [
+      "food_dining"
+    ]
+  },
+  {
+    "question": "Ăn uống ở Việt Nam có đắt không ạ?",
+    "answer": "Chi phí ăn uống ở Việt Nam khá phải chăng.  Một bữa ăn bình dân có giá từ 30.000 - 50.000 đồng, còn các nhà hàng sang trọng hơn thì giá cả sẽ cao hơn, tùy thuộc vào món ăn và địa điểm.  Bạn có thể tìm thấy nhiều quán ăn ngon với giá cả hợp lý ở khắp mọi nơi.",
+    "tags": [
+      "food_dining"
+    ]
+  },
+  {
+    "question": "Có nên thử các món ăn đường phố ở Việt Nam không?",
+    "answer": "Tuyệt đối nên thử! Ẩm thực đường phố Việt Nam rất phong phú và đa dạng, từ bún chả, phở, gỏi cuốn đến bánh mì, chè…  Giá cả rất phải chăng, chỉ từ 10.000 - 30.000 đồng/món. Tuy nhiên, hãy nhớ chọn những quán có vẻ sạch sẽ và đông khách để đảm bảo vệ sinh an toàn thực phẩm nhé!",
+    "tags": [
+      "food_dining"
+    ]
+  },
+  {
+    "question": "Ở Sài Gòn nên ăn món gì?",
+    "answer": "Sài Gòn có vô vàn món ngon! Bạn có thể thưởng thức phở, hủ tiếu, bún bò Huế, các món ăn đường phố như bánh tráng trộn, gỏi cuốn…  Khu Chợ Bến Thành là một điểm đến lý tưởng để khám phá ẩm thực đường phố.  Ngoài ra, nhiều nhà hàng sang trọng cũng phục vụ các món ăn Á - Âu ngon miệng.",
+    "tags": [
+      "food_dining"
+    ]
+  },
+  {
+    "question": "Món ăn nào ở Hà Nội bạn gợi ý?",
+    "answer": "Hà Nội nổi tiếng với nhiều món ăn truyền thống ngon tuyệt vời như phở cuốn, bún chả, nem rán, chả cá Lã Vọng… Bạn nên đến phố cổ để thưởng thức những món ăn này tại các quán ăn lâu đời, hoặc tìm đến các nhà hàng sang trọng hơn cho trải nghiệm ẩm thực cao cấp.",
+    "tags": [
+      "food_dining"
+    ]
+  },
+  {
+    "question": "Ăn chay ở Việt Nam có dễ tìm không?",
+    "answer": "Ngày càng nhiều nhà hàng và quán ăn tại Việt Nam phục vụ các món ăn chay. Bạn có thể dễ dàng tìm thấy các món chay tại các thành phố lớn như Hà Nội, Hồ Chí Minh, Đà Nẵng…  Nhiều nhà hàng chay còn có thực đơn rất đa dạng và hấp dẫn nữa đấy!",
+    "tags": [
+      "food_dining"
+    ]
+  },
+  {
+    "question": "Có những loại đồ uống đặc trưng nào của Việt Nam?",
+    "answer": "Việt Nam có nhiều loại đồ uống đặc trưng như cà phê sữa đá, trà đá, nước mía, sinh tố trái cây… Cà phê sữa đá là thức uống phổ biến và được yêu thích nhất.  Bạn nên thử các loại trà, nhất là trà sen nổi tiếng của Hà Nội.",
+    "tags": [
+      "food_dining"
+    ]
+  },
+  {
+    "question": "Tôi bị dị ứng với hải sản, ăn gì ở Việt Nam được nhỉ?",
+    "answer": "Đừng lo lắng! Việt Nam có rất nhiều món ăn không sử dụng hải sản. Bạn có thể thưởng thức các món ăn từ thịt gà, thịt bò, thịt heo, rau củ…  Phở gà, bún bò Huế, cơm sườn, hay các món ăn chay đều là lựa chọn tuyệt vời.",
+    "tags": [
+      "food_dining"
+    ]
+  },
+  {
+    "question": "Ăn ở Việt Nam có cần phải để ý điều gì không?",
+    "answer": "Bạn nên lưu ý một số điều như:  chọn những quán ăn sạch sẽ, sử dụng nước uống đóng chai, rửa tay thường xuyên, tránh ăn đồ ăn sống hoặc chưa được nấu chín kỹ. Đặc biệt, hãy hỏi giá trước khi gọi món để tránh bị chặt chém.",
+    "tags": [
+      "food_dining"
+    ]
+  },
+  {
+    "question": "Tip nào để thưởng thức ẩm thực Việt Nam trọn vẹn hơn?",
+    "answer": "Hãy dành thời gian khám phá ẩm thực đường phố, ghé thăm các chợ địa phương để trải nghiệm văn hóa ẩm thực chân thực nhất.  Đừng ngại thử những món ăn mới lạ, và nhớ hỏi người dân địa phương để được tư vấn những món ngon đặc sản của vùng nhé!",
+    "tags": [
+      "food_dining"
+    ]
+  }
+]

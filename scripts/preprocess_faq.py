@@ -2,8 +2,17 @@
 import json, re, unicodedata, sys
 from pathlib import Path
 from jsonschema import validate, ValidationError
-
-VALID_CATEGORIES = {"destination","weather","transport","scenery"}
+import argparse
+VALID_CATEGORIES = {
+    "destination", "weather", "transport", "scenery",
+    "visa", "tour", "payment", "career", "company", "membership", "promotion",
+    "destination_basics", "weather_best_time", "scenery_things_to_do", "visa_entry",
+    "tour_booking", "pricing_payment_currency", "promotions_membership",
+    "accommodation", "food_dining", "health_safety_insurance", "culture_etiquette",
+    "events_festivals", "connectivity_sim_wifi", "budgeting_tips",
+    "accessibility_family", "solo_female_safety", "sustainability_eco",
+    "emergency_laws", "packing_checklist"
+}
 SCHEMA_PATH = Path("data/schema_faq.jsonschema")
 
 def normalize_text(text: str) -> str:
@@ -15,7 +24,7 @@ def normalize_text(text: str) -> str:
 def load_schema():
     return json.loads(SCHEMA_PATH.read_text(encoding="utf-8"))
 
-def validate_and_clean(input_file="faq.json", output_file="faq_cleaned.json"):
+def validate_and_clean(input_file, output_file):
     schema = load_schema()
 
     try:
@@ -26,15 +35,21 @@ def validate_and_clean(input_file="faq.json", output_file="faq_cleaned.json"):
     cleaned = []
     for entry in raw:
         # 1. basic field check
-        if not all(k in entry for k in ("question", "answer", "category")):
+        if not all(k in entry for k in ("question", "answer")):
             print(f"❌ missing field → skip: {entry}")
+            continue
+        # Thay "category" bằng "tags" để đồng bộ với dataFromcallAPI.py
+        if "category" in entry:
+            entry["tags"] = [entry.pop("category")]
+        if "tags" not in entry or not entry["tags"]:
+            print(f"❌ missing tags → skip: {entry}")
             continue
         # 2. text normalisation
         entry["question"] = normalize_text(entry["question"])
-        entry["answer"]   = normalize_text(entry["answer"])
-        # 3. category quick check (faster fail than jsonschema)
-        if entry["category"] not in VALID_CATEGORIES:
-            print(f"❌ invalid category → skip: {entry}")
+        entry["answer"] = normalize_text(entry["answer"])
+        # 3. tags quick check
+        if not all(tag in VALID_CATEGORIES for tag in entry["tags"]):
+            print(f"❌ invalid tags → skip: {entry}")
             continue
         # 4. JSON-Schema validation
         try:
@@ -48,4 +63,9 @@ def validate_and_clean(input_file="faq.json", output_file="faq_cleaned.json"):
     print(f"✅  Saved {len(cleaned)} valid entries → {output_file}")
 
 if __name__ == "__main__":
-    validate_and_clean()
+    parser = argparse.ArgumentParser(description="Preprocess FAQ data.")
+    parser.add_argument("--input", required=True, help="Input JSON file path")
+    parser.add_argument("--output", required=True, help="Output JSON file path")
+    args = parser.parse_args()
+
+    validate_and_clean(args.input, args.output)

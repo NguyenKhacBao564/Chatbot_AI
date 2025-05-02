@@ -1,0 +1,177 @@
+[
+  {
+    "question": "Điều kiện đăng ký tour là gì?",
+    "answer": "Tùy vào điểm đến, khách cần visa hoặc giấy tờ khác để tham gia tour. Ví dụ, cần visa du lịch hoặc e-visa cho các chuyến đi quốc tế.",
+    "tags": [
+      "visa"
+    ]
+  },
+  {
+    "question": "Tôi nên chuẩn bị gì trước khi đi tour? Có nên đặt trước không? Nếu có, đặt như thế nào?",
+    "answer": "Chuẩn bị giấy tờ, quần áo và vật dụng cá nhân. Đặt trước qua website www.travel.com để tiện lợi. Nên đặt trước 1-2 tháng để có giá tốt hơn.",
+    "tags": [
+      "tour"
+    ]
+  },
+  {
+    "question": "Tiêu chí chọn khách tour là gì? Khách nào được ưu tiên?",
+    "answer": "Khách từ 55 tuổi trở lên hoặc học sinh, sinh viên được ưu tiên vì có giảm giá. Người có vấn đề sức khỏe có thể bị hạn chế. Vietravel ưu tiên khách quen hoặc được giới thiệu.",
+    "tags": [
+      "tour"
+    ]
+  },
+  {
+    "question": "Khách 18 tuổi có đủ điều kiện đăng ký tour không?",
+    "answer": "Có, khách 18 tuổi có thể tham gia nếu có sự đồng ý của phụ huynh nếu cần. Với tour nhóm đi Hà Nội, họ có thể tham gia cùng bạn bè hoặc gia đình.",
+    "tags": [
+      "tour"
+    ]
+  },
+  {
+    "question": "Tôi có thể thanh toán toàn bộ tour trực tuyến không? Có thể trả góp không?",
+    "answer": "Có, thanh toán toàn bộ qua www.travel.com với giao dịch an toàn 100. Trả góp cũng được hỗ trợ cho tour nội địa 7-10 ngày và quốc tế 10-15 ngày vào dịp lễ Tết.",
+    "tags": [
+      "payment"
+    ]
+  },
+  {
+    "question": "Tôi có thể tham gia tour mà không cần visa không?",
+    "answer": "Tùy điểm đến. Ví dụ, Vietravel có tour miễn visa đến Thái Lan cho kỳ nghỉ dưới 15 ngày.",
+    "tags": [
+      "visa"
+    ]
+  },
+  {
+    "question": "Tôi có thể làm hướng dẫn viên du lịch không? Lương bao nhiêu và điều kiện là gì?",
+    "answer": "Có, bạn có thể ứng tuyển tại các công ty như Vietravel. Hướng dẫn viên kiếm được 12.000.000-30.000.000 VND mỗi tour tùy tuyến. Điều kiện bao gồm bằng du lịch, kỹ năng ngoại ngữ và giấy phép hướng dẫn viên.",
+    "tags": [
+      "career"
+    ]
+  },
+  {
+    "question": "Khách du lịch có thể thanh toán bằng ngoại tệ không? Có những phương thức thanh toán nào?",
+    "answer": "Có, Vietravel chấp nhận thanh toán bằng VND hoặc ngoại tệ quy đổi theo tỷ giá ngày. Các phương thức gồm tiền mặt, thẻ ngân hàng và ứng dụng di động.",
+    "tags": [
+      "payment"
+    ]
+  },
+  {
+    "question": "Giá tour có bao gồm VAT không? Tôi có thể lấy hóa đơn VAT không?",
+    "answer": "Tất cả giá tour đều bao gồm VAT. Bạn có thể yêu cầu hóa đơn VAT sau khi đặt tour, trực tiếp tại công ty hoặc qua email.",
+    "tags": [
+      "payment"
+    ]
+  },
+  {
+    "question": "Vietravel có cung cấp bảo hiểm không? Bảo hiểm cho tour nội địa và quốc tế bao nhiêu?",
+    "answer": "Có, Vietravel bao gồm bảo hiểm. Tour nội địa từ 120.000-460.000 VND, tour quốc tế từ 12.000.000-30.000.000 VND tùy điểm đến.",
+    "tags": [
+      "tour"
+    ]
+  },
+  {
+    "question": "Có hướng dẫn viên đi kèm không? Có hạn chế sức khỏe hoặc du lịch nào không?",
+    "answer": "Có, Vietravel cung cấp hướng dẫn viên cho hầu hết các tour. Hạn chế sức khỏe áp dụng cho người có bệnh nặng hạn chế du lịch tùy thuộc vào điểm đến.",
+    "tags": [
+      "tour"
+    ]
+  },
+  {
+    "question": "Làm thế nào để đặt tour?",
+    "answer": "Đặt trực tuyến tại www.travel.com hoặc đến văn phòng Vietravel. Đặt sớm 1-2 tháng để có giá tốt và đảm bảo chỗ.",
+    "tags": [
+      "tour"
+    ]
+  },
+  {
+    "question": "Làm thế nào để xin visa du lịch?",
+    "answer": "Liên hệ Vietravel để được hỗ trợ hoặc tự xin tại đại sứ quán. Bạn cần hộ chiếu, ảnh và lịch trình chuyến đi.",
+    "tags": [
+      "visa"
+    ]
+  },
+  {
+    "question": "Những điểm chính khi du lịch quốc tế là gì? Lợi ích cho khách quốc tế là gì?",
+    "answer": "Chuẩn bị visa, hộ chiếu và bảo hiểm du lịch. Khách quốc tế được giảm giá tour nhóm và miễn phí đưa đón sân bay tại Hà Nội.",
+    "tags": [
+      "tour"
+    ]
+  },
+  {
+    "question": "Cần giấy tờ gì khi du lịch quốc tế? Bảo hiểm du lịch dùng để làm gì?",
+    "answer": "Cần hộ chiếu và visa. Bảo hiểm du lịch bảo vệ bạn trong các trường hợp khẩn cấp như y tế hoặc hủy chuyến, đảm bảo an toàn.",
+    "tags": [
+      "visa"
+    ]
+  },
+  {
+    "question": "Công ty nào cung cấp tour tốt nhất? Công ty có tính phí gì không?",
+    "answer": "Vietravel là lựa chọn hàng đầu với địa chỉ tại 190 Pasteur, Quận 3, TP.HCM và 04 chi nhánh tại Hà Nội. Họ tính phí đặt tour tiêu chuẩn.",
+    "tags": [
+      "company"
+    ]
+  },
+  {
+    "question": "Vietravel có sắp xếp chuyến bay không? Vietravel có đặt vé máy bay không?",
+    "answer": "Có, Vietravel có thể sắp xếp chuyến bay cho tour. Họ cung cấp dịch vụ đặt vé máy bay cho cả tuyến nội địa và quốc tế.",
+    "tags": [
+      "tour"
+    ]
+  },
+  {
+    "question": "Làm thế nào để trở thành thành viên Vietravel? Lợi ích của thành viên là gì?",
+    "answer": "Đăng ký trực tuyến tại website Vietravel. Thành viên được giảm giá, ưu tiên đặt chỗ và nâng cấp miễn phí trên một số tour.",
+    "tags": [
+      "membership"
+    ]
+  },
+  {
+    "question": "Tôi phải làm gì nếu bị lỡ chuyến bay hoặc tour khởi hành mà không có tôi?",
+    "answer": "Liên hệ ngay Vietravel. Họ sẽ hỗ trợ đổi lịch hoặc hoàn tiền tùy chính sách tour, nhưng có thể mất phí.",
+    "tags": [
+      "tour"
+    ]
+  },
+  {
+    "question": "Điều gì xảy ra nếu tôi đến trễ? Tôi có thể tham gia tour sau không?",
+    "answer": "Nếu đến trễ, liên hệ Vietravel để tham gia tại điểm dừng tiếp theo, nhưng có thể phát sinh phí.",
+    "tags": [
+      "tour"
+    ]
+  },
+  {
+    "question": "Vietravel có khuyến mãi không? Vietravel có thường xuyên khuyến mãi không?",
+    "answer": "Có, Vietravel có khuyến mãi vào các dịp lễ như Tết. Họ thường có 2-3 đợt khuyến mãi mỗi năm.",
+    "tags": [
+      "promotion"
+    ]
+  },
+  {
+    "question": "Làm thế nào để đặt vé máy bay?",
+    "answer": "Đặt trực tiếp qua Vietravel hoặc đối tác của họ. Họ cung cấp vé máy bay kèm gói tour để tiện lợi.",
+    "tags": [
+      "tour"
+    ]
+  },
+  {
+    "question": "Tôi phải làm gì nếu đi du lịch một mình? Làm thế nào để du lịch an toàn?",
+    "answer": "Tham gia tour nhóm của Vietravel để an toàn. Luôn chia sẻ lịch trình với gia đình và tuân thủ hướng dẫn an toàn địa phương.",
+    "tags": [
+      "tour"
+    ]
+  },
+  {
+    "question": "Hướng dẫn viên có thể làm việc tại Tour Guide không? Điều kiện làm việc tại Tour Guide là gì?",
+    "answer": "Ứng tuyển tại Tourguideeeee.fun với bằng du lịch và kỹ năng ngoại ngữ. Điều kiện làm việc bao gồm giờ linh hoạt và khối lượng công việc theo mùa.",
+    "tags": [
+      "career"
+    ]
+  },
+  {
+    "question": "Công ty tour có cung cấp bữa ăn không? Có hạn chế ăn uống nào không?",
+    "answer": "Có, Tour Guide cung cấp bữa ăn trong tour. Thông báo trước nếu có hạn chế ăn uống như ăn chay hoặc dị ứng.",
+    "tags": [
+      "tour"
+    ]
+  }
+]
