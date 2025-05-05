@@ -26,7 +26,8 @@
             "accommodation", "food_dining", "health_safety_insurance", "culture_etiquette",
             "events_festivals", "connectivity_sim_wifi", "budgeting_tips",
             "accessibility_family", "solo_female_safety", "sustainability_eco",
-            "emergency_laws", "packing_checklist"
+            "emergency_laws", "packing_checklist",
+            "famous destination", "clothing", "shopping", "entertainment"
           ]
         },
         "minItems": 1
