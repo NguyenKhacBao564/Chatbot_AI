@@ -1,0 +1,876 @@
+
+import os
+import json
+import faiss
+import numpy as np
+from sentence_transformers import SentenceTransformer
+from transformers import AutoTokenizer, AutoModelForSequenceClassification, AutoModelForTokenClassification, pipeline
+from vncorenlp import VnCoreNLP
+from dateutil.parser import parse
+from datetime import datetime, timedelta
+import logging
+import re
+import calendar
+import torch
+
+# Cấu hình logging
+logging.basicConfig(level=logging.DEBUG)
+logger = logging.getLogger(__name__)
+
+class TourRetrievalPipeline:
+    def __init__(self, index_file="faq_index.faiss", metadata_file="faq_metadata.json"):
+        # Load Faiss index và metadata
+        self.index = faiss.read_index(index_file)
+        with open(metadata_file, 'r', encoding='utf-8') as f:
+            self.metadata = json.load(f)
+
+        # Load SentenceTransformer
+        self.model = SentenceTransformer("all-MiniLM-L6-v2")
+
+        # Load PhoBERT cho phân loại ý định
+        self.intent_tokenizer = AutoTokenizer.from_pretrained("./phobert_intent_finetuned")
+        self.intent_model = AutoModelForSequenceClassification.from_pretrained("./phobert_intent_finetuned")
+        self.intent_labels = {0: "find_tour_with_location", 1: "find_tour_with_location_and_time", 2: "find_tour_with_location_and_price", 3: "out_of_scope"}
+
+        # Load PhoBERT cho NER
+        self.ner_tokenizer = AutoTokenizer.from_pretrained("./phobert_ner_finetuned")
+        self.ner_model = AutoModelForTokenClassification.from_pretrained("./phobert_ner_finetuned")
+        self.ner_pipeline = pipeline("ner", model=self.ner_model, tokenizer=self.ner_tokenizer, aggregation_strategy="None")
+        self.label_list = ['B-LOC', 'I-LOC', 'B-PER', 'I-PER', 'B-ORG', 'I-ORG', 'B-TIME', 'I-TIME', 'B-MONEY', 'I-MONEY', 'O']
+        self.id2label = {i: label for i, label in enumerate(self.label_list)}
+
+        # Load VnCoreNLP với đường dẫn chính xác
+        current_dir = os.path.dirname(os.path.abspath(__file__))
+        jar_path = os.path.join(current_dir, "VnCoreNLP-1.1.1.jar")
+        logger.info(f"Đang khởi tạo VnCoreNLP với đường dẫn: {jar_path}")
+        self.vncorenlp = VnCoreNLP(jar_path, annotators="wseg,pos,ner", max_heap_size='-Xmx2g')
+        logger.info("VnCoreNLP đã khởi tạo thành công!")
+
+        # Quản lý session
+        self.sessions = {}
+        logger.info("Khởi tạo TourRetrievalPipeline thành công!")
+
+    def extract_intent(self, query):
+        inputs = self.intent_tokenizer(query, return_tensors="pt", max_length=128, truncation=True, padding=True)
+        with torch.no_grad():
+            outputs = self.intent_model(**inputs)
+        logits = outputs.logits
+        predicted_class = torch.argmax(logits, dim=1).item()
+        intent = self.intent_labels[predicted_class]
+        logger.debug(f"Detected intent: {intent}")
+        return intent
+
+    def extract_entities(self, query, user_id="default_user"):
+        if user_id not in self.sessions:
+            self.sessions[user_id] = {
+                "location": None, "time": None, "price": None,
+            }
+
+        session = self.sessions[user_id]
+
+        # Tokenize bằng VnCoreNLP
+        tokens = self.vncorenlp.tokenize(query)
+        tokens = [word for sentence in tokens for word in sentence]
+        logger.debug(f"Tokens: {tokens}")
+
+        # Trích xuất thực thể bằng PhoBERT NER
+        query_segmented = " ".join(tokens)
+        print("query_segmented: ", query_segmented)
+        entities = self.ner_pipeline(query_segmented)
+        logger.debug(f"Entities: {entities}")
+
+        # location = session["location"]
+        # time = session["time"]
+        # price = session["price"]
+
+        # # Trích xuất từ entities
+        # for entity in entities:
+        #     entity_label = entity["entity_group"]
+        #     entity_text = entity["word"]
+        #     if entity_label == "B-LOCATION":
+        #         location = entity_text
+        #     elif entity_label == "B-TIME":
+        #         try:
+        #             time = parse(entity_text, fuzzy=True)
+        #             logger.debug(f"Parsed time as datetime: {time}")
+        #         except ValueError as e:
+        #             logger.warning(f"Không parse được {entity_text} thành datetime: {e}")
+        #     elif entity_label == "B-PRICE":
+        #         price = entity_text
+
+        # # Logic thủ công bổ sung cho thời gian
+        # query_lower = query.lower()
+        # month_names = {
+        #     "tháng 1": 1, "tháng 2": 2, "tháng 3": 3, "tháng 4": 4, "tháng 5": 5,
+        #     "tháng 6": 6, "tháng 7": 7, "tháng 8": 8, "tháng 9": 9, "tháng 10": 10,
+        #     "tháng 11": 11, "tháng 12": 12
+        # }
+        # for month_name, month_num in month_names.items():
+        #     if month_name in query_lower and not time:
+        #         current_year = datetime.now().year
+        #         if "này" in query_lower and month_num < datetime.now().month:
+        #             current_year += 1
+        #         start_date = datetime(current_year, month_num, 1)
+        #         end_date = datetime(current_year, month_num, calendar.monthrange(current_year, month_num)[1])
+        #         time = (start_date, end_date)
+        #         break
+
+        # date_pattern = r'\d{1,2}/\d{1,2}(?:/\d{2,4})?'
+        # match = re.search(date_pattern, query)
+        # if match and not time:
+        #     date_str = match.group(0)
+        #     try:
+        #         if len(date_str.split('/')) == 2:
+        #             date_str = f"{date_str}/{datetime.now().year}"
+        #         parsed_date = parse(date_str, dayfirst=True)
+        #         time = (parsed_date, parsed_date)
+        #         logger.debug(f"Parsed custom date {date_str} as: {parsed_date}")
+        #     except ValueError as e:
+        #         logger.warning(f"Không parse được {date_str} thành datetime: {e}")
+
+        # # Cập nhật session
+        # if location:
+        #     session["location"] = location
+        # if time:
+        #     session["time"] = time
+        # if price:
+        #     session["price"] = price
+
+        # logger.debug(f"Extracted entities: location={location}, time={time}, price={price}")
+        # return {
+        #     "location": location, "time": time, "price": price
+        # }
+
+    def get_tour_response(self, query, top_k=3, user_id="default_user"):
+        intent = self.extract_intent(query)
+        info = self.extract_entities(query, user_id)
+        # session = self.sessions[user_id]
+        # print("session: ", session)
+        # if intent in ["find_tour_with_location", "find_tour_with_location_and_time", "find_tour_with_location_and_price"]:
+        #     if not info["location"]:
+        #         return "Dạ, để tìm tour phù hợp, em cần bạn cung cấp thêm:\n- Điểm đến (ví dụ: Đà Lạt, Hà Nội, Phú Quốc)\nBạn cho em biết điểm đến nha!"
+        #     if not info["time"]:
+        #         return "Dạ, em cần bạn cung cấp thêm:\n- Thời gian khởi hành (ví dụ: tháng 12, 2 tuần tới)\nBạn cho em biết thời gian nha!"
+
+        #     query_description = f"Tour tại {info['location']}"
+        #     query_embedding = self.model.encode([query_description], show_progress_bar=False)
+        #     query_embedding = np.array(query_embedding).astype("float32")
+
+        #     distances, indices = self.index.search(query_embedding, top_k)
+        #     logger.debug(f"Faiss search results - distances: {distances}, indices: {indices}")
+
+        #     start_date = info["time"][0] if isinstance(info["time"], tuple) else info["time"]
+        #     end_date = info["time"][1] if isinstance(info["time"], tuple) else info["time"]
+        #     if isinstance(end_date, str):
+        #         try:
+        #             end_date = parse(end_date, fuzzy=True) + timedelta(days=14)
+        #         except ValueError:
+        #             end_date = start_date + timedelta(days=14)
+
+        #     filtered_tours = []
+        #     for idx in indices[0]:
+        #         if idx < len(self.metadata):
+        #             tour = self.metadata[idx]
+        #             if tour["destination"].lower() != info["location"].lower():
+        #                 continue
+        #             tour_dates = [datetime.strptime(d, "%Y-%m-%d") for d in tour["start_dates"]]
+        #             if not any(start_date <= d <= end_date for d in tour_dates):
+        #                 continue
+        #             filtered_tours.append(tour)
+
+        #     if not filtered_tours:
+        #         response = f"Xin lỗi, em chưa tìm thấy tour nào đến {info['location']} trong thời gian {info['time']}"
+        #         response += ". Bạn muốn thử địa điểm khác hoặc thời gian khác không nè?"
+        #         return response
+
+        #     response = f"Dạ, bạn muốn khám phá {info['location']} trong khoảng thời gian từ {start_date.strftime('%d/%m/%Y')} đến {end_date.strftime('%d/%m/%Y')}!"
+        #     response += " 😊 Dưới đây là một số tour gợi ý:\n"
+        #     for tour in filtered_tours:
+        #         response += f"\n- **{tour['name']}**\n"
+        #         response += f"  - Số ngày: {tour['duration']}\n"
+        #         response += f"  - Ngày khởi hành: {', '.join(tour['start_dates'])}\n"
+        #         response += f"  - Giá từ: {tour['price']:,}₫\n"
+        #         response += f"  - Điểm nổi bật: {', '.join(tour['highlights'])}.\n"
+        #         response += f"  - Chi tiết: {tour['details_url']}\n"
+        #     response += "\nBạn ưng tour nào không? 😊 Muốn em gửi chi tiết lịch trình hay hỗ trợ đặt tour luôn nè?"
+
+        #     # Xóa session sau khi hoàn thành
+        #     self.sessions.pop(user_id, None)
+        #     return response
+
+        # else:
+        #     return "Dạ, em chưa hiểu ý bạn. Bạn có thể hỏi về tour hoặc đặt phòng khách sạn không ạ?"
+
+if __name__ == "__main__":
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+    pipeline = TourRetrievalPipeline(
+        index_file=os.path.join(current_dir, "faq_index.faiss"),
+        metadata_file=os.path.join(current_dir, "faq_metadata.json")
+    )
+    user_id = "test_user"
+    while True:
+        user_query = input("Bạn: ")
+        if user_query.lower() in ["exit", "quit"]:
+            break
+        response = pipeline.get_tour_response(user_query, user_id=user_id)
+        print(f"Bot: {response}")
+
+
+
+
+
+
+
+
+# import os
+# import json
+# import faiss
+# import numpy as np
+# from sentence_transformers import SentenceTransformer
+# from transformers import AutoTokenizer, AutoModelForSequenceClassification, AutoModelForTokenClassification, pipeline
+# from vncorenlp import VnCoreNLP
+# from dateutil.parser import parse
+# from datetime import datetime, timedelta
+# import logging
+# import re
+# import calendar
+# import torch
+
+# # Cấu hình logging
+# logging.basicConfig(level=logging.DEBUG)
+# logger = logging.getLogger(__name__)
+# # json_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'faiss', 'faq_index.faiss'))
+# # print("join path: ",json_path)
+# class TourRetrievalPipeline:
+#     def __init__(self, index_file="faq_index.faiss", metadata_file="faq_metadata.json"):
+#         # Load Faiss index và metadata
+#         self.index = faiss.read_index(index_file)
+#         with open(metadata_file, 'r', encoding='utf-8') as f:
+#             self.metadata = json.load(f)
+
+#         # Load SentenceTransformer
+#         self.model = SentenceTransformer("all-MiniLM-L6-v2")
+
+#         # Load PhoBERT cho phân loại ý định
+#         self.intent_tokenizer = AutoTokenizer.from_pretrained("./phobert_intent_finetuned")
+#         self.intent_model = AutoModelForSequenceClassification.from_pretrained("./phobert_intent_finetuned")
+#         self.intent_labels = {0: "find_tour_with_location", 1: "find_tour_with_location_and_time", 2: "find_tour_with_location_and_price", 3: "out_of_scope"}
+
+#         # Load PhoBERT cho NER
+#         self.ner_tokenizer = AutoTokenizer.from_pretrained("./phobert_ner_finetuned")
+#         self.ner_model = AutoModelForTokenClassification.from_pretrained("./phobert_ner_finetuned")
+#         self.ner_pipeline = pipeline("ner", model=self.ner_model, tokenizer=self.ner_tokenizer, aggregation_strategy="simple")
+#         self.label_list = ["O", "B-LOCATION", "I-LOCATION", "I-TIME", "B-TIME"]
+#         self.id2label = {i: label for i, label in enumerate(self.label_list)}
+
+#         # # Load VnCoreNLP
+#         # self.vncorenlp = VnCoreNLP("VnCoreNLP-1.2.jar", annotators="wseg,pos,ner", max_heap_size='-Xmx2g')
+#         # print("vncorenlp: ",self.vncorenlp)
+#         # Load VnCoreNLP với đường dẫn chính xác
+#         current_dir = os.path.dirname(os.path.abspath(__file__))
+#         jar_path = os.path.join(current_dir, "VnCoreNLP-1.1.1.jar")
+#         logger.info(f"Đang khởi tạo VnCoreNLP với đường dẫn: {jar_path}")
+#         self.vncorenlp = VnCoreNLP(jar_path, annotators="wseg,pos,ner", max_heap_size='-Xmx2g')
+#         logger.info("VnCoreNLP đã khởi tạo thành công!")
+#          # Load VnCoreNLP
+#         # self.vncorenlp = VnCoreNLP("path/to/vncorenlp/VnCoreNLP-1.1.1.jar", annotators="wseg,pos,ner", max_heap_size='-Xmx2g')
+
+#         # Quản lý session
+#         self.sessions = {}
+#         logger.info("Khởi tạo TourRetrievalPipeline thành công!")
+
+#     def extract_intent(self, query):
+#         inputs = self.intent_tokenizer(query, return_tensors="pt", max_length=128, truncation=True, padding=True)
+#         with torch.no_grad():
+#             outputs = self.intent_model(**inputs)
+#         logits = outputs.logits
+#         predicted_class = torch.argmax(logits, dim=1).item()
+#         intent = self.intent_labels[predicted_class]
+#         logger.debug(f"Detected intent: {intent}")
+#         return intent
+
+#     def extract_entities(self, query, user_id="default_user"):
+#         if user_id not in self.sessions:
+#             self.sessions[user_id] = {
+#                 "location": None, "time": None, "price": None,
+#             }
+
+#         session = self.sessions[user_id]
+
+#         # Sửa lỗi chính tả
+
+#         # # Tokenize bằng VnCoreNLP
+#         # tokens = self.vncorenlp.tokenize(query)
+#         # tokens = [word for sentence in tokens for word in sentence]
+#         # logger.debug(f"Tokens: {tokens}")
+
+#         # # Trích xuất thực thể bằng PhoBERT NER
+#         # for token in tokens:
+#         #     # token = " ".join(token)
+#         #     entities = self.ner_pipeline(token)
+#         #     logger.debug(f"Entities: {entities}")
+        
+#         # Tokenize bằng VnCoreNLP
+#         tokens = self.vncorenlp.tokenize(query)
+#         tokens = [word for sentence in tokens for word in sentence]
+#         logger.debug(f"Tokens: {tokens}")
+
+#         # Trích xuất thực thể bằng PhoBERT NER
+#         query_segmented = " ".join(tokens)
+#         entities = self.ner_pipeline(query_segmented)
+#         logger.debug(f"Entities: {entities}")
+
+
+#         location = session["location"]
+#         time = session["time"]
+#         price = session["price"]
+#         # time_display = session["time_display"]
+#         # departure = session["departure"]
+#         # num_people = session["num_people"]
+#         # num_rooms = session["num_rooms"]
+
+#         # # Chuyển đổi từ tiếng Việt sang số (nếu cần)
+#         # word_to_num = {"một": 1, "hai": 2, "ba": 3, "bốn": 4, "năm": 5, "sáu": 6, "bảy": 7, "tám": 8, "chín": 9, "mười": 10}
+
+#         # # Trích xuất từ entities
+#         # for entity in entities:
+#         #     entity_label = entity["entity_group"]
+#         #     entity_text = entity["word"]
+#         #     if entity_label == "B-LOC":
+#         #         if not location:
+#         #             location = entity_text
+#         #         else:
+#         #             departure = entity_text
+#         #     elif entity_label == "B-DATE":
+#         #         try:
+#         #             time = parse(entity_text, fuzzy=True)
+#         #             time_display = entity_text
+#         #             logger.debug(f"Parsed time as datetime: {time}")
+#         #         except ValueError as e:
+#         #             logger.warning(f"Không parse được {entity_text} thành datetime: {e}")
+#         #             time_display = entity_text
+#         #     elif entity_label == "B-num_people":
+#         #         num_people = word_to_num.get(entity_text.lower(), int(entity_text))
+#         #     elif entity_label == "B-num_rooms":
+#         #         num_rooms = word_to_num.get(entity_text.lower(), int(entity_text))
+
+#         # # Logic thủ công bổ sung cho thời gian
+#         # query_lower = query.lower()
+#         # month_names = {
+#         #     "tháng 1": 1, "tháng 2": 2, "tháng 3": 3, "tháng 4": 4, "tháng 5": 5,
+#         #     "tháng 6": 6, "tháng 7": 7, "tháng 8": 8, "tháng 9": 9, "tháng 10": 10,
+#         #     "tháng 11": 11, "tháng 12": 12
+#         # }
+#         # for month_name, month_num in month_names.items():
+#         #     if month_name in query_lower and not time:
+#         #         current_year = datetime.now().year
+#         #         if "này" in query_lower and month_num < datetime.now().month:
+#         #             current_year += 1
+#         #         start_date = datetime(current_year, month_num, 1)
+#         #         end_date = datetime(current_year, month_num, calendar.monthrange(current_year, month_num)[1])
+#         #         time = (start_date, end_date)
+#         #         time_display = month_name
+#         #         break
+
+#         # date_pattern = r'\d{1,2}/\d{1,2}(?:/\d{2,4})?'
+#         # match = re.search(date_pattern, query)
+#         # if match and not time:
+#         #     date_str = match.group(0)
+#         #     try:
+#         #         if len(date_str.split('/')) == 2:
+#         #             date_str = f"{date_str}/{datetime.now().year}"
+#         #         parsed_date = parse(date_str, dayfirst=True)
+#         #         time = (parsed_date, parsed_date)
+#         #         time_display = date_str
+#         #         logger.debug(f"Parsed custom date {date_str} as: {parsed_date}")
+#         #     except ValueError as e:
+#         #         logger.warning(f"Không parse được {date_str} thành datetime: {e}")
+#         #         time_display = date_str
+
+#         # # Cập nhật session
+#         # if location:
+#         #     session["location"] = location
+#         # if time:
+#         #     session["time"] = time
+#         #     session["time_display"] = time_display
+#         # if departure:
+#         #     session["departure"] = departure
+#         # if num_people:
+#         #     session["num_people"] = num_people
+#         # if num_rooms:
+#         #     session["num_rooms"] = num_rooms
+
+#         logger.debug(f"Extracted entities: location={location}, time={time}, price={price}")
+#         return {
+#             "location": location, "time": time, "price": price
+#         }
+
+#     def get_tour_response(self, query, top_k=3, user_id="default_user"):
+#         intent = self.extract_intent(query)
+#         info = self.extract_entities(query, user_id)
+#         session = self.sessions[user_id]
+#         print("session: ",session)
+#         # if intent == "find_tour":
+#         #     if not info["location"]:
+#         #         return "Dạ, để tìm tour phù hợp, em cần bạn cung cấp thêm:\n- Điểm đến (ví dụ: Đà Lạt, Hà Nội, Phú Quốc)\nBạn cho em biết điểm đến nha!"
+#         #     if not info["time"]:
+#         #         return "Dạ, em cần bạn cung cấp thêm:\n- Thời gian khởi hành (ví dụ: tháng 12, 2 tuần tới)\nBạn cho em biết thời gian nha!"
+#         #     if not info["departure"]:
+#         #         return "Dạ, em cần bạn cung cấp thêm:\n- Địa điểm khởi hành (ví dụ: từ TP.HCM, Hà Nội)\nBạn cho em biết điểm khởi hành nha!"
+
+#         #     query_description = f"Tour tại {info['location']}"
+#         #     query_embedding = self.model.encode([query_description], show_progress_bar=False)
+#         #     query_embedding = np.array(query_embedding).astype("float32")
+
+#         #     distances, indices = self.index.search(query_embedding, top_k)
+#         #     logger.debug(f"Faiss search results - distances: {distances}, indices: {indices}")
+
+#         #     start_date = info["time"][0] if isinstance(info["time"], tuple) else info["time"]
+#         #     end_date = info["time"][1] if isinstance(info["time"], tuple) else info["time"]
+#         #     if isinstance(end_date, str):
+#         #         try:
+#         #             end_date = parse(end_date, fuzzy=True) + timedelta(days=14)
+#         #         except ValueError:
+#         #             end_date = start_date + timedelta(days=14)
+
+#         #     filtered_tours = []
+#         #     for idx in indices[0]:
+#         #         if idx < len(self.metadata):
+#         #             tour = self.metadata[idx]
+#         #             if tour["destination"].lower() != info["location"].lower():
+#         #                 continue
+#         #             tour_dates = [datetime.strptime(d, "%Y-%m-%d") for d in tour["start_dates"]]
+#         #             if not any(start_date <= d <= end_date for d in tour_dates):
+#         #                 continue
+#         #             if info["departure"] and info["departure"].lower() not in [d.lower() for d in tour["departure"]]:
+#         #                 continue
+#         #             filtered_tours.append(tour)
+
+#         #     if not filtered_tours:
+#         #         response = f"Xin lỗi, em chưa tìm thấy tour nào đến {info['location']} trong thời gian {info['time_display']}"
+#         #         if info["departure"]:
+#         #             response += f" từ {info['departure']}"
+#         #         response += ". Bạn muốn thử địa điểm khác hoặc thời gian khác không nè?"
+#         #         return response
+
+#         #     response = f"Dạ, bạn muốn khám phá {info['location']} trong {info['time_display']}"
+#         #     if info["departure"]:
+#         #         response += f" từ {info['departure']}"
+#         #     response += "! 😊 Dưới đây là một số tour gợi ý:\n"
+#         #     for tour in filtered_tours:
+#         #         response += f"\n- **{tour['name']}**\n"
+#         #         response += f"  - Số ngày: {tour['duration']}\n"
+#         #         response += f"  - Ngày khởi hành: {', '.join(tour['start_dates'])}\n"
+#         #         response += f"  - Giá từ: {tour['price']:,}₫\n"
+#         #         response += f"  - Điểm nổi bật: {', '.join(tour['highlights'])}.\n"
+#         #         response += f"  - Chi tiết: {tour['details_url']}\n"
+#         #     response += "\nBạn ưng tour nào không? 😊 Muốn em gửi chi tiết lịch trình hay hỗ trợ đặt tour luôn nè?"
+
+#         #     # Xóa session sau khi hoàn thành
+#         #     self.sessions.pop(user_id, None)
+#         #     return response
+
+#         # elif intent == "book_room_with_num_people":
+#         #     if not info["location"]:
+#         #         return "Dạ, để đặt phòng, em cần bạn cung cấp thêm:\n- Điểm đến (ví dụ: Đà Lạt, Hà Nội, Phú Quốc)\nBạn cho em biết điểm đến nha!"
+#         #     if not info["time"]:
+#         #         return "Dạ, em cần bạn cung cấp thêm:\n- Thời gian lưu trú (ví dụ: tháng 12, 2 tuần tới)\nBạn cho em biết thời gian nha!"
+#         #     if not info["num_people"]:
+#         #         return "Dạ, em cần biết số lượng người để đặt phòng. Bạn cho em biết số người nha!"
+
+#         #     response = f"Dạ, bạn muốn đặt phòng tại {info['location']} cho {info['num_people']} người trong {info['time_display']}."
+#         #     if info["departure"]:
+#         #         response += f" Điểm khởi hành từ {info['departure']}."
+#         #     response += "\nEm sẽ tìm khách sạn phù hợp và gợi ý tour đi kèm nếu cần. Bạn chờ em một chút nha! 😊"
+
+#         #     # Xử lý giả lập tìm khách sạn
+#         #     response += "\nGợi ý khách sạn:\n- **Khách sạn Thanh Lịch** (Huế)\n  - Phòng đôi: 500,000₫/đêm\n  - Phòng gia đình: 800,000₫/đêm\n  - Đặt ngay: [Link đặt phòng]\n"
+#         #     response += "\nBạn có muốn em tìm thêm tour đi kèm không nè?"
+
+#         #     self.sessions.pop(user_id, None)
+#         #     return response
+
+#         # elif intent == "book_room_with_number":
+#         #     if not info["location"]:
+#         #         return "Dạ, để đặt phòng, em cần bạn cung cấp thêm:\n- Điểm đến (ví dụ: Đà Lạt, Hà Nội, Phú Quốc)\nBạn cho em biết điểm đến nha!"
+#         #     if not info["time"]:
+#         #         return "Dạ, em cần bạn cung cấp thêm:\n- Thời gian lưu trú (ví dụ: tháng 12, 2 tuần tới)\nBạn cho em biết thời gian nha!"
+#         #     if not info["num_rooms"]:
+#         #         return "Dạ, em cần biết số lượng phòng để đặt. Bạn cho em biết số phòng nha!"
+
+#         #     response = f"Dạ, bạn muốn đặt {info['num_rooms']} phòng tại {info['location']} trong {info['time_display']}."
+#         #     if info["departure"]:
+#         #         response += f" Điểm khởi hành từ {info['departure']}."
+#         #     response += "\nEm sẽ tìm khách sạn phù hợp và gợi ý tour đi kèm nếu cần. Bạn chờ em một chút nha! 😊"
+
+#         #     # Xử lý giả lập tìm khách sạn
+#         #     response += "\nGợi ý khách sạn:\n- **Khách sạn Thanh Lịch** (Huế)\n  - Phòng đôi: 500,000₫/đêm\n  - Phòng gia đình: 800,000₫/đêm\n  - Đặt ngay: [Link đặt phòng]\n"
+#         #     response += "\nBạn có muốn em tìm thêm tour đi kèm không nè?"
+
+#         #     self.sessions.pop(user_id, None)
+#         #     return response
+
+#         # else:
+#         #     return "Dạ, em chưa hiểu ý bạn. Bạn có thể hỏi về tour hoặc đặt phòng khách sạn không ạ?"
+
+# if __name__ == "__main__":
+#     # current_dir = os.path.dirname(os.path.abspath(__file__))
+#     # pipeline = TourRetrievalPipeline(
+#     #     index_file=os.path.join(current_dir, "faq_index.faiss"),
+#     #     metadata_file=os.path.join(current_dir, "faq_metadata.json")
+#     # )
+#     # user_id = "test_user"
+#     # user_query = "Tôi muốn tìm tour tại Đà Lạt trong tháng 12"  # input("Bạn: ")
+#     # # if user_query.lower() in ["exit", "quit"]:
+#     # #     break
+#     # response = pipeline.get_tour_response(user_query, user_id=user_id)
+#     # print(f"Bot: {response}")
+#     current_dir = os.path.dirname(os.path.abspath(__file__))
+#     pipeline = TourRetrievalPipeline(
+#         index_file=os.path.join(current_dir, "faq_index.faiss"),
+#         metadata_file=os.path.join(current_dir, "faq_metadata.json")
+#     )
+#     user_id = "test_user"
+#     while True:
+#         user_query = input("Bạn: ")
+#         if user_query.lower() in ["exit", "quit"]:
+#             break
+#         response = pipeline.get_tour_response(user_query, user_id=user_id)
+#         print(f"Bot: {response}")
+    
+
+
+
+
+
+
+
+# import os
+# import json
+# import faiss
+# import numpy as np
+# from sentence_transformers import SentenceTransformer
+# from transformers import AutoTokenizer, AutoModelForSequenceClassification, AutoModelForTokenClassification, pipeline
+# from subprocess import Popen, PIPE
+# from dateutil.parser import parse
+# from datetime import datetime, timedelta
+# import logging
+# import re
+# import calendar
+# import torch
+# import tempfile
+
+# # Cấu hình logging
+# logging.basicConfig(level=logging.DEBUG)
+# logger = logging.getLogger(__name__)
+
+# class TourRetrievalPipeline:
+#     def __init__(self, index_file="faq_index.faiss", metadata_file="faq_metadata.json"):
+#         # Load Faiss index và metadata
+#         self.index = faiss.read_index(index_file)
+#         with open(metadata_file, 'r', encoding='utf-8') as f:
+#             self.metadata = json.load(f)
+
+#         # Load SentenceTransformer
+#         self.model = SentenceTransformer("all-MiniLM-L6-v2")
+
+#         # Load PhoBERT cho phân loại ý định
+#         self.intent_tokenizer = AutoTokenizer.from_pretrained("./phobert_intent_finetuned")
+#         self.intent_model = AutoModelForSequenceClassification.from_pretrained("./phobert_intent_finetuned")
+#         self.intent_labels = {0: "find_tour", 1: "book_room_with_num_people", 2: "book_room_with_number"}
+
+#         # Load PhoBERT cho NER
+#         self.ner_tokenizer = AutoTokenizer.from_pretrained("./phobert_ner_finetuned")
+#         self.ner_model = AutoModelForTokenClassification.from_pretrained("./phobert_ner_finetuned")
+#         self.ner_pipeline = pipeline("ner", model=self.ner_model, tokenizer=self.ner_tokenizer, aggregation_strategy="simple")
+#         self.label_list = ["O", "B-LOC", "B-DATE", "I-DATE", "B-num_people", "B-num_rooms"]
+#         self.id2label = {i: label for i, label in enumerate(self.label_list)}
+
+#        # Khởi tạo VnCoreNLP như tiến trình con
+#         current_dir = os.path.dirname(os.path.abspath(__file__))
+#         self.jar_path = os.path.join(current_dir, "VnCoreNLP-1.2.jar")
+#         models_path = os.path.join(current_dir, "models", "wordsegmenter", "wordsegmenter.rdr")
+#         if not os.path.exists(self.jar_path):
+#             raise FileNotFoundError(f"File {self.jar_path} không tồn tại!")
+#         if not os.path.exists(models_path):
+#             raise FileNotFoundError(f"File mô hình {models_path} không tồn tại! Vui lòng đảm bảo thư mục 'models' nằm cùng cấp với file .jar.")
+#         logger.info(f"Đang chuẩn bị sử dụng VnCoreNLP với file: {self.jar_path}")
+
+#         # Quản lý session
+#         self.sessions = {}
+#         logger.info("Khởi tạo TourRetrievalPipeline thành công!")
+
+#     def tokenize_with_vncorenlp(self, query):
+#         print("bắt đầu tokenize")
+#         # Tạo file tạm để lưu query
+#         with tempfile.NamedTemporaryFile(mode='w',encoding='utf-8', suffix='.txt', delete=False) as input_file:
+#             input_file.write(query)
+#             input_file_path = input_file.name
+        
+#         # Tạo file tạm cho đầu ra
+#         output_file_path = input_file_path + '.out'
+
+#         # Chạy VnCoreNLP như tiến trình con
+#         command = [
+#             "java", "-Xmx2g", "-jar", self.jar_path,
+#             "-fin", input_file_path,
+#             "-fout", output_file_path,
+#             "-annotators", "wseg,pos,ner"
+#         ]
+#         process = Popen(command, stdout=PIPE, stderr=PIPE)
+#         stdout, stderr = process.communicate()
+#         if process.returncode != 0:
+#             logger.error(f"Lỗi khi chạy VnCoreNLP: {stderr.decode()}")
+#             raise Exception(f"Lỗi khi chạy VnCoreNLP: {stderr.decode()}")
+
+#         # Đọc kết quả
+#         with open(output_file_path, 'r', encoding='utf-8') as f:
+#             result = f.read()
+#         logger.debug(f"Kết quả tokenize từ VnCoreNLP: {result}")
+
+#         # Xóa file tạm
+#         os.unlink(input_file_path)
+#         os.unlink(output_file_path)
+
+#         return result.splitlines()  # Trả về danh sách các dòng token
+
+#     def extract_intent(self, query):
+#         inputs = self.intent_tokenizer(query, return_tensors="pt", max_length=128, truncation=True, padding=True)
+#         with torch.no_grad():
+#             outputs = self.intent_model(**inputs)
+#         logits = outputs.logits
+#         predicted_class = torch.argmax(logits, dim=1).item()
+#         print("predicted_class: ",predicted_class)
+#         intent = self.intent_labels[predicted_class]
+#         logger.debug(f"Detected intent: {intent}")
+#         return intent
+
+#     def extract_entities(self, query, user_id="default_user"):
+#         if user_id not in self.sessions:
+#             self.sessions[user_id] = {
+#                 "location": None, "time": None, "time_display": None,
+#                 "departure": None, "num_people": None, "num_rooms": None
+#             }
+
+#         session = self.sessions[user_id]
+
+#         # Sửa lỗi chính tả
+#         query = query.replace("tron", "trong")
+#         logger.debug(f"Query sau khi sửa lỗi chính tả: {query}")
+
+#         # Tokenize bằng VnCoreNLP
+#         tokens = self.tokenize_with_vncorenlp(query)
+#         tokens = [word for sentence in tokens for word in sentence]  # Giả định mỗi dòng là một câu đã phân đoạn
+#         logger.debug(f"Tokens: {tokens}")
+
+#         # Trích xuất thực thể bằng PhoBERT NER
+#         entities = self.ner_pipeline(query)
+#         logger.debug(f"Entities: {entities}")
+
+#         location = session["location"]
+#         time = session["time"]
+#         time_display = session["time_display"]
+#         departure = session["departure"]
+#         num_people = session["num_people"]
+#         num_rooms = session["num_rooms"]
+
+#         # Chuyển đổi từ tiếng Việt sang số (nếu cần)
+#         word_to_num = {"một": 1, "hai": 2, "ba": 3, "bốn": 4, "năm": 5, "sáu": 6, "bảy": 7, "tám": 8, "chín": 9, "mười": 10}
+
+#         # Trích xuất từ entities
+#         for entity in entities:
+#             entity_label = entity["entity_group"]
+#             entity_text = entity["word"]
+#             if entity_label == "B-LOC":
+#                 if not location:
+#                     location = entity_text
+#                 else:
+#                     departure = entity_text
+#             elif entity_label == "B-DATE":
+#                 try:
+#                     time = parse(entity_text, fuzzy=True)
+#                     time_display = entity_text
+#                     logger.debug(f"Parsed time as datetime: {time}")
+#                 except ValueError as e:
+#                     logger.warning(f"Không parse được {entity_text} thành datetime: {e}")
+#                     time_display = entity_text
+#             elif entity_label == "B-num_people":
+#                 num_people = word_to_num.get(entity_text.lower(), int(entity_text))
+#             elif entity_label == "B-num_rooms":
+#                 num_rooms = word_to_num.get(entity_text.lower(), int(entity_text))
+
+#         # Logic thủ công bổ sung cho thời gian
+#         query_lower = query.lower()
+#         month_names = {
+#             "tháng 1": 1, "tháng 2": 2, "tháng 3": 3, "tháng 4": 4, "tháng 5": 5,
+#             "tháng 6": 6, "tháng 7": 7, "tháng 8": 8, "tháng 9": 9, "tháng 10": 10,
+#             "tháng 11": 11, "tháng 12": 12
+#         }
+#         for month_name, month_num in month_names.items():
+#             if month_name in query_lower and not time:
+#                 current_year = datetime.now().year
+#                 if "này" in query_lower and month_num < datetime.now().month:
+#                     current_year += 1
+#                 start_date = datetime(current_year, month_num, 1)
+#                 end_date = datetime(current_year, month_num, calendar.monthrange(current_year, month_num)[1])
+#                 time = (start_date, end_date)
+#                 time_display = month_name
+#                 break
+
+#         date_pattern = r'\d{1,2}/\d{1,2}(?:/\d{2,4})?'
+#         match = re.search(date_pattern, query)
+#         if match and not time:
+#             date_str = match.group(0)
+#             try:
+#                 if len(date_str.split('/')) == 2:
+#                     date_str = f"{date_str}/{datetime.now().year}"
+#                 parsed_date = parse(date_str, dayfirst=True)
+#                 time = (parsed_date, parsed_date)
+#                 time_display = date_str
+#                 logger.debug(f"Parsed custom date {date_str} as: {parsed_date}")
+#             except ValueError as e:
+#                 logger.warning(f"Không parse được {date_str} thành datetime: {e}")
+#                 time_display = date_str
+
+#         # Cập nhật session
+#         if location:
+#             session["location"] = location
+#         if time:
+#             session["time"] = time
+#             session["time_display"] = time_display
+#         if departure:
+#             session["departure"] = departure
+#         if num_people:
+#             session["num_people"] = num_people
+#         if num_rooms:
+#             session["num_rooms"] = num_rooms
+
+#         logger.debug(f"Extracted entities: location={location}, time={time}, time_display={time_display}, departure={departure}, num_people={num_people}, num_rooms={num_rooms}")
+#         return {
+#             "location": location, "time": time, "time_display": time_display,
+#             "departure": departure, "num_people": num_people, "num_rooms": num_rooms
+#         }
+
+#     def get_tour_response(self, query, top_k=3, user_id="default_user"):
+#         intent = self.extract_intent(query)
+#         info = self.extract_entities(query, user_id)
+#         session = self.sessions[user_id]
+
+#         if intent == "find_tour":
+#             if not info["location"]:
+#                 return "Dạ, để tìm tour phù hợp, em cần bạn cung cấp thêm:\n- Điểm đến (ví dụ: Đà Lạt, Hà Nội, Phú Quốc)\nBạn cho em biết điểm đến nha!"
+#             if not info["time"]:
+#                 return "Dạ, em cần bạn cung cấp thêm:\n- Thời gian khởi hành (ví dụ: tháng 12, 2 tuần tới)\nBạn cho em biết thời gian nha!"
+#             if not info["departure"]:
+#                 return "Dạ, em cần bạn cung cấp thêm:\n- Địa điểm khởi hành (ví dụ: từ TP.HCM, Hà Nội)\nBạn cho em biết điểm khởi hành nha!"
+
+#             query_description = f"Tour tại {info['location']}"
+#             query_embedding = self.model.encode([query_description], show_progress_bar=False)
+#             query_embedding = np.array(query_embedding).astype("float32")
+
+#             distances, indices = self.index.search(query_embedding, top_k)
+#             logger.debug(f"Faiss search results - distances: {distances}, indices: {indices}")
+
+#             start_date = info["time"][0] if isinstance(info["time"], tuple) else info["time"]
+#             end_date = info["time"][1] if isinstance(info["time"], tuple) else info["time"]
+#             if isinstance(end_date, str):
+#                 try:
+#                     end_date = parse(end_date, fuzzy=True) + timedelta(days=14)
+#                 except ValueError:
+#                     end_date = start_date + timedelta(days=14)
+
+#             filtered_tours = []
+#             for idx in indices[0]:
+#                 if idx < len(self.metadata):
+#                     tour = self.metadata[idx]
+#                     if tour["destination"].lower() != info["location"].lower():
+#                         continue
+#                     tour_dates = [datetime.strptime(d, "%Y-%m-%d") for d in tour["start_dates"]]
+#                     if not any(start_date <= d <= end_date for d in tour_dates):
+#                         continue
+#                     if info["departure"] and info["departure"].lower() not in [d.lower() for d in tour["departure"]]:
+#                         continue
+#                     filtered_tours.append(tour)
+
+#             if not filtered_tours:
+#                 response = f"Xin lỗi, em chưa tìm thấy tour nào đến {info['location']} trong thời gian {info['time_display']}"
+#                 if info["departure"]:
+#                     response += f" từ {info['departure']}"
+#                 response += ". Bạn muốn thử địa điểm khác hoặc thời gian khác không nè?"
+#                 return response
+
+#             response = f"Dạ, bạn muốn khám phá {info['location']} trong {info['time_display']}"
+#             if info["departure"]:
+#                 response += f" từ {info['departure']}"
+#             response += "! 😊 Dưới đây là một số tour gợi ý:\n"
+#             for tour in filtered_tours:
+#                 response += f"\n- **{tour['name']}**\n"
+#                 response += f"  - Số ngày: {tour['duration']}\n"
+#                 response += f"  - Ngày khởi hành: {', '.join(tour['start_dates'])}\n"
+#                 response += f"  - Giá từ: {tour['price']:,}₫\n"
+#                 response += f"  - Điểm nổi bật: {', '.join(tour['highlights'])}.\n"
+#                 response += f"  - Chi tiết: {tour['details_url']}\n"
+#             response += "\nBạn ưng tour nào không? 😊 Muốn em gửi chi tiết lịch trình hay hỗ trợ đặt tour luôn nè?"
+
+#             # Xóa session sau khi hoàn thành
+#             self.sessions.pop(user_id, None)
+#             return response
+
+#         elif intent == "book_room_with_num_people":
+#             if not info["location"]:
+#                 return "Dạ, để đặt phòng, em cần bạn cung cấp thêm:\n- Điểm đến (ví dụ: Đà Lạt, Hà Nội, Phú Quốc)\nBạn cho em biết điểm đến nha!"
+#             if not info["time"]:
+#                 return "Dạ, em cần bạn cung cấp thêm:\n- Thời gian lưu trú (ví dụ: tháng 12, 2 tuần tới)\nBạn cho em biết thời gian nha!"
+#             if not info["num_people"]:
+#                 return "Dạ, em cần biết số lượng người để đặt phòng. Bạn cho em biết số người nha!"
+
+#             response = f"Dạ, bạn muốn đặt phòng tại {info['location']} cho {info['num_people']} người trong {info['time_display']}."
+#             if info["departure"]:
+#                 response += f" Điểm khởi hành từ {info['departure']}."
+#             response += "\nEm sẽ tìm khách sạn phù hợp và gợi ý tour đi kèm nếu cần. Bạn chờ em một chút nha! 😊"
+
+#             # Xử lý giả lập tìm khách sạn
+#             response += "\nGợi ý khách sạn:\n- **Khách sạn Thanh Lịch** (Huế)\n  - Phòng đôi: 500,000₫/đêm\n  - Phòng gia đình: 800,000₫/đêm\n  - Đặt ngay: [Link đặt phòng]\n"
+#             response += "\nBạn có muốn em tìm thêm tour đi kèm không nè?"
+
+#             self.sessions.pop(user_id, None)
+#             return response
+
+#         elif intent == "book_room_with_number":
+#             if not info["location"]:
+#                 return "Dạ, để đặt phòng, em cần bạn cung cấp thêm:\n- Điểm đến (ví dụ: Đà Lạt, Hà Nội, Phú Quốc)\nBạn cho em biết điểm đến nha!"
+#             if not info["time"]:
+#                 return "Dạ, em cần bạn cung cấp thêm:\n- Thời gian lưu trú (ví dụ: tháng 12, 2 tuần tới)\nBạn cho em biết thời gian nha!"
+#             if not info["num_rooms"]:
+#                 return "Dạ, em cần biết số lượng phòng để đặt. Bạn cho em biết số phòng nha!"
+
+#             response = f"Dạ, bạn muốn đặt {info['num_rooms']} phòng tại {info['location']} trong {info['time_display']}."
+#             if info["departure"]:
+#                 response += f" Điểm khởi hành từ {info['departure']}."
+#             response += "\nEm sẽ tìm khách sạn phù hợp và gợi ý tour đi kèm nếu cần. Bạn chờ em một chút nha! 😊"
+
+#             # Xử lý giả lập tìm khách sạn
+#             response += "\nGợi ý khách sạn:\n- **Khách sạn Thanh Lịch** (Huế)\n  - Phòng đôi: 500,000₫/đêm\n  - Phòng gia đình: 800,000₫/đêm\n  - Đặt ngay: [Link đặt phòng]\n"
+#             response += "\nBạn có muốn em tìm thêm tour đi kèm không nè?"
+
+#             self.sessions.pop(user_id, None)
+#             return response
+
+#         else:
+#             return "Dạ, em chưa hiểu ý bạn. Bạn có thể hỏi về tour hoặc đặt phòng khách sạn không ạ?"
+
+# if __name__ == "__main__":
+#     current_dir = os.path.dirname(os.path.abspath(__file__))
+#     pipeline = TourRetrievalPipeline(
+#         index_file=os.path.join(current_dir, "faq_index.faiss"),
+#         metadata_file=os.path.join(current_dir, "faq_metadata.json")
+#     )
+#     user_id = "test_user"
+#     while True:
+#         user_query = input("Bạn: ")
+#         if user_query.lower() in ["exit", "quit"]:
+#             break
+#         response = pipeline.get_tour_response(user_query, user_id=user_id)
+#         print(f"Bot: {response}")
+
+

@@ -1,0 +1,122 @@
+[
+  {
+    "query": "Tôi muốn đi tour Đà Lạt",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Cho tôi thông tin tour Đà Lạt",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tôi cần đặt tour ở Đà Lạt",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Có tour nào ở Đà Lạt không?",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tôi muốn khám phá Đà Lạt qua tour",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tìm tour Đà Lạt cho tôi",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tôi muốn đặt tour Đà Lạt tháng 6",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour Đà Lạt khởi hành ngày 12/7",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tôi cần tour Đà Lạt vào cuối tuần sau",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour Đà Lạt ngày 1/8 có không?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tôi muốn đi tour Đà Lạt vào dịp lễ 2/9",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tìm tour Đà Lạt khởi hành 20/6",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour Đà Lạt khoảng 15/5",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tôi muốn tour Đà Lạt vào đầu tháng 7",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Có tour Đà Lạt nào ngày 30/4 không?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour Đà Lạt khởi hành tuần đầu tháng 8",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tôi muốn tour Đà Lạt giá dưới 2 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tour Đà Lạt nào rẻ dưới 4 triệu?",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi cần tour Đà Lạt tầm 1,5 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tìm tour Đà Lạt giá khoảng 3 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Có tour Đà Lạt nào dưới 5 triệu không?",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi muốn đi tour Đà Lạt giá rẻ dưới 2,5 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tour Đà Lạt giá dưới 1 triệu có không?",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi cần tour Đà Lạt giá khoảng 2 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tour Đà Lạt nào dưới 3,5 triệu?",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tìm tour Đà Lạt giá rẻ dưới 4 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi muốn đặt tour đi Đà Lạt",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Có tour Đà Lạt nào vào ngày 10/10 không?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour Đà Lạt giá dưới 6 triệu có không?",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi muốn tour Đà Lạt khởi hành ngày 5/5",
+    "intent": "find_tour_with_location_and_time"
+  }
+]

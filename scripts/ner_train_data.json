@@ -1,0 +1,203 @@
+[
+    {
+        "sentence": "Lê Thị Hồng muốn đặt tour đi Phú Quốc vào tháng 12 năm 2025",
+        "labels": ["B-PER", "I-PER", "I-PER", "O", "O", "O", "B-LOC", "I-LOC", "O", "B-TIME", "I-TIME", "B-TIME", "I-TIME"]
+    },
+    {
+        "sentence": "Tour tại Đà Lạt có giá 3 triệu đồng khởi hành ngày 20 tháng 11",
+        "labels": ["O", "O", "B-LOC", "I-LOC", "O", "O", "B-MONEY", "I-MONEY", "I-MONEY", "O", "B-TIME", "I-TIME", "I-TIME"]
+    },
+    {
+        "sentence": "Trần Văn Nam đặt vé máy bay từ Sài Gòn đến Hà Nội",
+        "labels": ["B-PER", "I-PER", "I-PER", "O", "O", "O", "O", "B-LOC", "I-LOC", "O", "B-LOC", "I-LOC"]
+    },
+    {
+        "sentence": "Công ty Vietravel tổ chức tour đi Nha Trang với giá 4 triệu đồng",
+        "labels": ["O", "B-ORG", "O", "O", "O", "B-LOC", "I-LOC", "O", "O", "B-MONEY", "I-MONEY", "I-MONEY"]
+    },
+    {
+        "sentence": "Phạm Thị Lan ở tại Cần Thơ muốn đi tour vào tuần sau",
+        "labels": ["B-PER", "I-PER", "I-PER", "O", "O", "B-LOC", "I-LOC", "O", "O", "O", "B-TIME", "I-TIME"]
+    },
+    {
+        "sentence": "Khách sạn tại Hà Nội có giá từ 2 triệu đồng mỗi đêm",
+        "labels": ["O", "O", "B-LOC", "I-LOC", "O", "O", "B-MONEY", "I-MONEY", "I-MONEY", "O", "O"]
+    },
+    {
+        "sentence": "Nguyễn Văn Hùng tham gia hội thảo của FPT tại Đà Nẵng",
+        "labels": ["B-PER", "I-PER", "I-PER", "O", "O", "O", "B-ORG", "O", "B-LOC", "I-LOC"]
+    },
+    {
+        "sentence": "Tour đi Huế khởi hành từ Sài Gòn vào ngày 5 tháng 4 năm 2024",
+        "labels": ["O", "O", "B-LOC", "O", "O", "B-LOC", "I-LOC", "O", "B-TIME", "I-TIME", "I-TIME", "I-TIME", "B-TIME", "I-TIME"]
+    },
+    {
+        "sentence": "Vũ Thị Minh đặt tour 7 triệu đồng đi Phú Quốc tháng 9",
+        "labels": ["B-PER", "I-PER", "I-PER", "O", "B-MONEY", "I-MONEY", "I-MONEY", "O", "B-LOC", "I-LOC", "B-TIME"]
+    },
+    {
+        "sentence": "Công ty Saigontourist cung cấp tour tại Đà Lạt với giá 6 triệu",
+        "labels": ["O", "B-ORG", "O", "O", "O", "B-LOC", "I-LOC", "O", "O", "B-MONEY", "I-MONEY"]
+    },
+    {
+        "sentence": "Đoàn Thị Hoa ở tại Nha Trang đặt tour ngày 15 tháng 8",
+        "labels": ["B-PER", "I-PER", "I-PER", "O", "O", "B-LOC", "I-LOC", "O", "O", "B-TIME", "I-TIME", "I-TIME"]
+    },
+    {
+        "sentence": "Chuyến đi Vũng Tàu khởi hành lúc 8 giờ sáng ngày mai",
+        "labels": ["O", "O", "B-LOC", "I-LOC", "O", "O", "B-TIME", "I-TIME", "I-TIME", "B-TIME"]
+    },
+    {
+        "sentence": "Trần Quốc Tuấn mua vé máy bay 2 triệu đồng đi Côn Đảo",
+        "labels": ["B-PER", "I-PER", "I-PER", "O", "O", "O", "B-MONEY", "I-MONEY", "I-MONEY", "O", "B-LOC", "I-LOC"]
+    },
+    {
+        "sentence": "Hội thảo tại TP Hồ Chí Minh diễn ra vào tháng 10",
+        "labels": ["O", "O", "B-LOC", "I-LOC", "I-LOC", "I-LOC", "O", "O", "B-TIME"]
+    },
+    {
+        "sentence": "Lê Văn Tâm đặt tour đi Đà Nẵng với giá 4 triệu đồng",
+        "labels": ["B-PER", "I-PER", "I-PER", "O", "O", "O", "B-LOC", "I-LOC", "O", "O", "B-MONEY", "I-MONEY", "I-MONEY"]
+    },
+    {
+        "sentence": "Khách sạn ở Phú Yên có giá 1 triệu đồng mỗi đêm",
+        "labels": ["O", "O", "B-LOC", "I-LOC", "O", "O", "B-MONEY", "I-MONEY", "I-MONEY", "O", "O"]
+    },
+    {
+        "sentence": "Nguyễn Thị Thanh tham gia tour tại Huế vào cuối tuần",
+        "labels": ["B-PER", "I-PER", "I-PER", "O", "O", "O", "B-LOC", "O", "B-TIME", "I-TIME"]
+    },
+    {
+        "sentence": "Công ty Vinatour tổ chức tour đi Cần Thơ giá 3 triệu đồng",
+        "labels": ["O", "B-ORG", "O", "O", "O", "B-LOC", "I-LOC", "O", "B-MONEY", "I-MONEY", "I-MONEY"]
+    },
+    {
+        "sentence": "Phạm Văn Long ở tại Hà Nội muốn đi tour tháng 11",
+        "labels": ["B-PER", "I-PER", "I-PER", "O", "O", "B-LOC", "I-LOC", "O", "O", "O", "B-TIME"]
+    },
+    {
+        "sentence": "Tour tại Hội An có giá 5 triệu đồng khởi hành ngày 1 tháng 12",
+        "labels": ["O", "O", "B-LOC", "I-LOC", "O", "O", "B-MONEY", "I-MONEY", "I-MONEY", "O", "B-TIME", "I-TIME", "I-TIME"]
+    },
+    {
+        "sentence": "Trần Thị Ngọc Ánh đặt tour đi Quy Nhơn với giá 4 triệu đồng vào tháng 10",
+        "labels": ["B-PER", "I-PER", "I-PER", "I-PER", "O", "O", "B-LOC", "I-LOC", "O", "O", "B-MONEY", "I-MONEY", "I-MONEY", "O", "B-TIME"]
+    },
+    {
+        "sentence": "Khách sạn tại Vũng Tàu có giá 1 triệu 5 mỗi đêm từ ngày 10 tháng 12",
+        "labels": ["O", "O", "B-LOC", "I-LOC", "O", "O", "B-MONEY", "I-MONEY", "I-MONEY", "O", "O", "O", "B-TIME", "I-TIME", "I-TIME"]
+    },
+    {
+        "sentence": "Nguyễn Văn Thành ở tại Hà Nội muốn tham gia tour Đà Lạt tuần sau",
+        "labels": ["B-PER", "I-PER", "I-PER", "O", "O", "B-LOC", "I-LOC", "O", "O", "O", "B-LOC", "I-LOC", "B-TIME", "I-TIME"]
+    },
+    {
+        "sentence": "Công ty Vietjet Air cung cấp vé máy bay đi Phú Quốc giá 2 triệu đồng",
+        "labels": ["O", "B-ORG", "I-ORG", "O", "O", "O", "O", "B-LOC", "I-LOC", "O", "B-MONEY", "I-MONEY", "I-MONEY"]
+    },
+    {
+        "sentence": "Lê Minh Tuấn đặt tour đi Côn Đảo vào ngày 25 tháng 11 năm 2025",
+        "labels": ["B-PER", "I-PER", "I-PER", "O", "O", "B-LOC", "I-LOC", "O", "B-TIME", "I-TIME", "I-TIME", "B-TIME", "I-TIME"]
+    },
+    {
+        "sentence": "Sự kiện âm nhạc tại TP Hồ Chí Minh diễn ra từ ngày 1 tháng 8",
+        "labels": ["O", "O", "O", "B-LOC", "I-LOC", "I-LOC", "I-LOC", "O", "O", "B-TIME", "I-TIME", "I-TIME"]
+    },
+    {
+        "sentence": "Phạm Thị Kim Oanh ở Nha Trang đặt tour giá 6 triệu đồng đi Huế",
+        "labels": ["B-PER", "I-PER", "I-PER", "I-PER", "O", "B-LOC", "I-LOC", "O", "O", "B-MONEY", "I-MONEY", "I-MONEY", "O", "B-LOC"]
+    },
+    {
+        "sentence": "Tour từ Đà Nẵng đến Hội An khởi hành lúc 9 giờ sáng ngày mai",
+        "labels": ["O", "B-LOC", "I-LOC", "O", "B-LOC", "I-LOC", "O", "O", "B-TIME", "I-TIME", "I-TIME", "B-TIME"]
+    },
+    {
+        "sentence": "Võ Văn Hùng tham gia tour của Saigontourist tại Phú Yên tháng 9",
+        "labels": ["B-PER", "I-PER", "I-PER", "O", "O", "O", "B-ORG", "O", "B-LOC", "I-LOC", "B-TIME"]
+    },
+    {
+        "sentence": "Khách sạn 5 sao tại Đà Lạt có giá 3 triệu đồng mỗi đêm vào cuối tuần",
+        "labels": ["O", "O", "O", "B-LOC", "I-LOC", "O", "O", "B-MONEY", "I-MONEY", "I-MONEY", "O", "O", "B-TIME", "I-TIME"]
+    },
+    {
+        "sentence": "Công ty Viettravel tổ chức tour Hà Giang vào tháng 10",
+        "labels": ["O", "B-ORG", "O", "O", "B-LOC", "I-LOC", "O", "B-TIME", "I-TIME"]
+    },
+    {
+        "sentence": "Nguyễn Thị Hương đăng ký chuyến đi Đà Nẵng với giá 4 triệu đồng",
+        "labels": ["B-PER", "I-PER", "I-PER", "O", "O", "O", "B-LOC", "I-LOC", "O", "O", "B-MONEY", "I-MONEY", "I-MONEY"]
+    },
+    {
+        "sentence": "Tour du lịch Huế kéo dài 3 ngày 2 đêm chỉ với 2.5 triệu đồng",
+        "labels": ["O", "O", "B-LOC", "O", "O", "B-TIME", "I-TIME", "I-TIME", "O", "O", "B-MONEY", "I-MONEY", "I-MONEY"]
+    },
+    {
+        "sentence": "Công ty Saigontourist mở tour đi Côn Đảo từ tháng 11",
+        "labels": ["O", "B-ORG", "O", "O", "O", "B-LOC", "I-LOC", "O", "B-TIME", "I-TIME"]
+    },
+    {
+        "sentence": "Võ Minh Trí đặt vé máy bay đi Đà Nẵng tháng 6",
+        "labels": ["B-PER", "I-PER", "I-PER", "O", "O", "O", "O", "B-LOC", "I-LOC", "B-TIME", "I-TIME"]
+    },
+    {
+        "sentence": "Chuyến bay từ Hà Nội đến Phú Quốc có giá 1 triệu đồng",
+        "labels": ["O", "O", "B-LOC", "I-LOC", "O", "B-LOC", "I-LOC", "O", "O", "B-MONEY", "I-MONEY", "I-MONEY"]
+    },
+    {
+        "sentence": "Khách hàng Lê Văn Tùng chọn combo du lịch Nha Trang tháng 7",
+        "labels": ["O", "O", "B-PER", "I-PER", "I-PER", "O", "O", "O", "B-LOC", "I-LOC", "B-TIME", "I-TIME"]
+    },
+    {
+        "sentence": "Tour Hạ Long 3 ngày 2 đêm giá 3.2 triệu đồng",
+        "labels": ["O", "B-LOC", "I-LOC", "B-TIME", "I-TIME", "I-TIME", "O", "B-MONEY", "I-MONEY", "I-MONEY"]
+    },
+    {
+        "sentence": "Anh Trần Văn Cường muốn đi Sapa vào tháng 12",
+        "labels": ["O", "B-PER", "I-PER", "I-PER", "O", "O", "B-LOC", "O", "B-TIME", "I-TIME"]
+    },
+    {
+        "sentence": "Cô Nguyễn Hồng Nhung chọn nghỉ dưỡng tại Phú Quốc",
+        "labels": ["O", "B-PER", "I-PER", "I-PER", "O", "O", "O", "B-LOC", "I-LOC"]
+    },
+    {
+        "sentence": "Du khách cần đặt cọc 1 triệu đồng cho tour Đà Lạt",
+        "labels": ["O", "O", "O", "O", "B-MONEY", "I-MONEY", "I-MONEY", "O", "O", "B-LOC", "I-LOC"]
+    },
+    {
+        "sentence": "Nguyễn Minh Tâm đi du lịch Cần Thơ với 5 triệu đồng",
+        "labels": ["B-PER", "I-PER", "I-PER", "O", "O", "O", "B-LOC", "I-LOC", "O", "B-MONEY", "I-MONEY", "I-MONEY"]
+    },
+    {
+        "sentence": "Vietravel giảm giá tour Đà Nẵng còn 2 triệu đồng",
+        "labels": ["B-ORG", "O", "O", "O", "B-LOC", "I-LOC", "O", "B-MONEY", "I-MONEY", "I-MONEY"]
+    },
+    {
+        "sentence": "Mai Linh tham gia chuyến đi Phan Thiết dịp lễ 30/4",
+        "labels": ["B-PER", "I-PER", "O", "O", "O", "B-LOC", "I-LOC", "O", "O", "B-TIME"]
+    },
+    {
+        "sentence": "FLC tổ chức sự kiện tại Quy Nhơn vào tháng 5",
+        "labels": ["B-ORG", "O", "O", "O", "O", "B-LOC", "I-LOC", "O", "B-TIME", "I-TIME"]
+    },
+    {
+        "sentence": "Vợ chồng anh Nam đặt tour Cà Mau với giá 6 triệu",
+        "labels": ["O", "O", "O", "B-PER", "O", "O", "B-LOC", "I-LOC", "O", "O", "B-MONEY", "I-MONEY"]
+    },
+    {
+        "sentence": "Khởi hành từ TP HCM đến Vũng Tàu trong ngày",
+        "labels": ["O", "O", "B-LOC", "I-LOC", "O", "B-LOC", "I-LOC", "O", "B-TIME"]
+    },
+    {
+        "sentence": "Chị Hạnh đăng ký tour Nha Trang vào tháng 8",
+        "labels": ["O", "B-PER", "O", "O", "O", "B-LOC", "I-LOC", "O", "B-TIME", "I-TIME"]
+    },
+    {
+        "sentence": "FPT Travel tổ chức tour đảo Lý Sơn với giá 2.8 triệu",
+        "labels": ["B-ORG", "I-ORG", "O", "O", "O", "O", "B-LOC", "I-LOC", "O", "O", "B-MONEY", "I-MONEY"]
+    },
+    {
+        "sentence": "Vé máy bay đi Huế vào dịp lễ 2 tháng 9 có giá 1.5 triệu đồng",
+        "labels": ["O", "O", "O", "B-LOC", "O", "O", "O", "B-TIME", "I-TIME", "I-TIME", "O", "O", "B-MONEY", "I-MONEY", "I-MONEY"]
+    }
+    
+]
