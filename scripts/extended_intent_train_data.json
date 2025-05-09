@@ -1,0 +1,4042 @@
+[
+  {
+    "query": "Tôi muốn đi tour Đà Lạt",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Cho tôi thông tin tour Đà Lạt",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tôi cần đặt tour ở Đà Lạt",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Có tour nào ở Đà Lạt không?",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tôi muốn khám phá Đà Lạt qua tour",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tìm tour Đà Lạt cho tôi",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tôi muốn đặt tour Đà Lạt tháng 6",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour Đà Lạt khởi hành ngày 12/7",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tôi cần tour Đà Lạt vào cuối tuần sau",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour Đà Lạt ngày 1/8 có không?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tôi muốn đi tour Đà Lạt vào dịp lễ 2/9",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tìm tour Đà Lạt khởi hành 20/6",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour Đà Lạt khoảng 15/5",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tôi muốn tour Đà Lạt vào đầu tháng 7",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Có tour Đà Lạt nào ngày 30/4 không?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour Đà Lạt khởi hành tuần đầu tháng 8",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tôi muốn tour Đà Lạt giá dưới 2 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tour Đà Lạt nào rẻ dưới 4 triệu?",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi cần tour Đà Lạt tầm 1,5 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tìm tour Đà Lạt giá khoảng 3 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Có tour Đà Lạt nào dưới 5 triệu không?",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi muốn đi tour Đà Lạt giá rẻ dưới 2,5 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tour Đà Lạt giá dưới 1 triệu có không?",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi cần tour Đà Lạt giá khoảng 2 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tour Đà Lạt nào dưới 3,5 triệu?",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tìm tour Đà Lạt giá rẻ dưới 4 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi muốn đặt tour đi Đà Lạt",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Có tour Đà Lạt nào vào ngày 10/10 không?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour Đà Lạt giá dưới 6 triệu có không?",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi muốn tour Đà Lạt khởi hành ngày 5/5",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Cho tôi thông tin tour Vĩnh Phúc",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tư vấn tour du lịch tại Tiền Giang giúp tôi",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tư vấn tour du lịch tại Sóc Trăng giúp tôi",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tư vấn tour du lịch tại TP. Hồ Chí Minh giúp tôi",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tôi quan tâm tour đến Vĩnh Long",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Có tour nào tại Gia Lai không?",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tôi muốn đi tour Bình Định",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Có tour nào ở Hà Nam không?",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Bạn có tour nào tới Hà Nam không?",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tôi muốn đăng ký tour đi Hà Nội",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tôi quan tâm tour đến Bình Thuận",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Có tour nào ở Cần Thơ không?",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Có tour nào ở Sơn La không?",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tôi cần đặt tour ở Bạc Liêu",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tôi muốn đi tour Phú Yên",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Bạn có tour nào tới Long An không?",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Cho tôi thông tin tour Bình Phước",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tư vấn tour du lịch tại Hậu Giang giúp tôi",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Cho tôi thông tin tour Thái Nguyên",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Có tour nào ở Bắc Ninh không?",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tôi muốn đặt tour đi Quảng Bình",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Bạn gợi ý tour nào ở Sóc Trăng không?",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tôi muốn khám phá Lạng Sơn qua tour",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tour du lịch nào đến Bình Định hiện có?",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Bạn gợi ý tour nào ở Bình Dương không?",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tôi muốn khám phá Quảng Ngãi qua tour",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tôi muốn khám phá Thừa Thiên Huế qua tour",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tôi muốn khám phá Đồng Nai qua tour",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tôi muốn đặt tour đi Phú Thọ",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Có tour nào tại Thái Nguyên không?",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tôi quan tâm tour đến Điện Biên",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tìm tour An Giang cho tôi",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Có tour nào tại Quảng Bình không?",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Có tour nào ở Thái Nguyên không?",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tôi muốn khám phá Quảng Bình qua tour",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tôi cần đặt tour ở Hải Phòng",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tôi quan tâm tour đến Ninh Thuận",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Bạn gợi ý tour nào ở Tuyên Quang không?",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tôi muốn khám phá Bắc Giang qua tour",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Cho tôi thông tin tour Nghệ An",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tôi quan tâm tour đến Kiên Giang",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Bạn gợi ý tour nào ở Ninh Bình không?",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Bạn gợi ý tour nào ở Sơn La không?",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tôi muốn khám phá Kon Tum qua tour",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tour du lịch nào đến Thái Bình hiện có?",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tư vấn tour du lịch tại Phú Thọ giúp tôi",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tìm tour Quảng Ninh cho tôi",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Bạn có tour nào tới An Giang không?",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tôi muốn khám phá Ninh Bình qua tour",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Có tour nào ở Hòa Bình không?",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tôi muốn đặt tour đi Lâm Đồng",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Cho tôi thông tin tour Kon Tum",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tôi cần đặt tour ở Quảng Trị",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tôi muốn đăng ký tour đi Lai Châu",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tôi muốn đăng ký tour đi Lai Châu",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Cho tôi thông tin tour Phú Thọ",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Bạn có tour nào tới Bắc Ninh không?",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Có tour nào ở Bắc Kạn không?",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Bạn gợi ý tour nào ở Cà Mau không?",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tìm tour Lạng Sơn cho tôi",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Có tour nào ở Vĩnh Phúc không?",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Bạn gợi ý tour nào ở Lâm Đồng không?",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Cho tôi thông tin tour Bắc Ninh",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tìm tour Cần Thơ cho tôi",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Bạn gợi ý tour nào ở Cà Mau không?",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Bạn có tour nào tới Đắk Lắk không?",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tôi cần đặt tour ở Bến Tre",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Bạn gợi ý tour nào ở An Giang không?",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tour du lịch nào đến Đồng Nai hiện có?",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tour du lịch nào đến Bắc Ninh hiện có?",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Bạn có tour nào tới Tây Ninh không?",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tôi muốn đăng ký tour đi Hà Nam",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tìm tour Vĩnh Long cho tôi",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Bạn có tour nào tới Sơn La không?",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Có tour nào tại Cần Thơ không?",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Bạn có tour nào tới An Giang không?",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tôi muốn đăng ký tour đi Đà Nẵng",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tôi muốn đi tour Thái Bình",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tôi quan tâm tour đến Thái Nguyên",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tư vấn tour du lịch tại Bà Rịa - Vũng Tàu giúp tôi",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tôi muốn đặt tour đi Tiền Giang",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tư vấn tour du lịch tại Hà Nội giúp tôi",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Có tour nào ở Nam Định không?",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tour du lịch nào đến Bắc Kạn hiện có?",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Có tour nào tại Điện Biên không?",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Có tour nào tại An Giang không?",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tôi muốn khám phá Nghệ An qua tour",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Bạn có tour nào tới Lạng Sơn không?",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Có tour nào ở Kon Tum không?",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tour du lịch nào đến Long An hiện có?",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tư vấn tour du lịch tại Bạc Liêu giúp tôi",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tôi muốn khám phá Bà Rịa - Vũng Tàu qua tour",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tôi muốn đi tour Thái Nguyên",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Bạn có tour nào tới Bến Tre không?",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tôi muốn đặt tour đi Quảng Bình",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Cho tôi thông tin tour Hưng Yên",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tư vấn tour du lịch tại Bình Dương giúp tôi",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Cho tôi thông tin tour Cần Thơ",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Bạn gợi ý tour nào ở Hà Nội không?",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Cho tôi thông tin tour Bạc Liêu",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tôi muốn đặt tour đi Vĩnh Long",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Có tour nào ở Bình Phước không?",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tôi cần đặt tour ở Cần Thơ",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tôi quan tâm tour đến Hà Nội",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tôi cần đặt tour ở Phú Yên",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tôi muốn đi tour Yên Bái",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tôi muốn đi tour Quảng Trị",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tôi muốn đi tour Bắc Giang",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tôi muốn đăng ký tour đi Tuyên Quang",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Cho tôi thông tin tour Cao Bằng",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tôi muốn đi tour Nam Định",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tour du lịch nào đến Lai Châu hiện có?",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tour du lịch nào đến Bến Tre hiện có?",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Bạn gợi ý tour nào ở Quảng Ninh không?",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tìm tour Trà Vinh cho tôi",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tôi cần đặt tour ở Đồng Tháp",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tôi quan tâm tour đến Cao Bằng",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tìm tour Hậu Giang cho tôi",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tôi muốn đặt tour đi Bắc Ninh",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tư vấn tour du lịch tại Yên Bái giúp tôi",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tour du lịch nào đến Điện Biên hiện có?",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tôi muốn đăng ký tour đi Bến Tre",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Có tour nào tại Lạng Sơn không?",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tôi quan tâm tour đến Vĩnh Long",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tour du lịch nào đến Hà Nội hiện có?",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tôi muốn đi tour Thái Bình",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tôi quan tâm tour đến Nam Định",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Bạn gợi ý tour nào ở Quảng Ninh không?",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tôi muốn đặt tour đi Thanh Hóa",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tôi muốn khám phá Long An qua tour",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tôi cần đặt tour ở Đắk Nông",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tour du lịch nào đến Nghệ An hiện có?",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tôi cần đặt tour ở Sóc Trăng",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tour du lịch nào đến Bà Rịa - Vũng Tàu hiện có?",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tôi muốn đăng ký tour đi Cần Thơ",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Bạn có tour nào tới Long An không?",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tôi cần đặt tour ở Trà Vinh",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tôi muốn đăng ký tour đi Bình Định",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Bạn gợi ý tour nào ở Tiền Giang không?",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Có tour nào ở Vĩnh Phúc không?",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Bạn gợi ý tour nào ở Hưng Yên không?",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tư vấn tour du lịch tại Cao Bằng giúp tôi",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Cho tôi thông tin tour Vĩnh Phúc",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tôi muốn đi tour Phú Yên",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tôi muốn khám phá Phú Yên qua tour",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tìm tour Thừa Thiên Huế cho tôi",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tôi muốn đi tour Hậu Giang",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tôi muốn khám phá Hải Phòng qua tour",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tôi muốn đặt tour đi Sơn La",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tôi muốn đặt tour đi Tây Ninh",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Bạn gợi ý tour nào ở Bạc Liêu không?",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tư vấn tour du lịch tại Bình Thuận giúp tôi",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tôi muốn khám phá Tuyên Quang qua tour",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tôi muốn đặt tour đi Tiền Giang",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Bạn gợi ý tour nào ở Thừa Thiên Huế không?",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Bạn có tour nào tới Bà Rịa - Vũng Tàu không?",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Có tour nào ở Nghệ An không?",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tôi quan tâm tour đến Hưng Yên",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tôi cần đặt tour ở Nghệ An",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tour du lịch nào đến Kon Tum hiện có?",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tôi muốn đi tour Cao Bằng",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tôi muốn đặt tour đi Bến Tre",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Có tour nào tại Bình Định không?",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Bạn gợi ý tour nào ở Hậu Giang không?",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tôi quan tâm tour đến Gia Lai",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Bạn gợi ý tour nào ở Kon Tum không?",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Bạn gợi ý tour nào ở Tiền Giang không?",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Cho tôi thông tin tour Vĩnh Long",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tour du lịch nào đến Hải Dương hiện có?",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tôi muốn đi tour Hậu Giang",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tour du lịch nào đến Kon Tum hiện có?",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Có tour nào ở Gia Lai không?",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Bạn có tour nào tới Ninh Thuận không?",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tìm tour Nghệ An cho tôi",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Bạn gợi ý tour nào ở Đà Nẵng không?",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tôi muốn đi tour Đắk Nông",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tôi cần đặt tour ở Tiền Giang",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tìm tour Lào Cai cho tôi",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Bạn có tour nào tới Điện Biên không?",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tôi muốn đặt tour đi Bình Định",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Bạn có tour nào tới Lào Cai không?",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Có tour nào tại Bạc Liêu không?",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tour du lịch nào đến An Giang hiện có?",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tôi cần đặt tour ở Ninh Bình",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tour du lịch nào đến Hưng Yên hiện có?",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Có tour nào tại Bình Phước không?",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tư vấn tour du lịch tại Hà Tĩnh giúp tôi",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Cho tôi thông tin tour Điện Biên",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tôi muốn đi tour Sóc Trăng",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Cho tôi thông tin tour Lâm Đồng",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tư vấn tour du lịch tại Bình Phước giúp tôi",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Cho tôi thông tin tour Ninh Bình",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Cho tôi thông tin tour Lâm Đồng",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Cho tôi thông tin tour Quảng Trị",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Có tour nào tại Hà Nam không?",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Cho tôi thông tin tour Vĩnh Long",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tôi muốn đi tour Bắc Kạn",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Bạn có tour nào tới Điện Biên không?",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Có tour nào ở Thanh Hóa không?",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tôi cần đặt tour ở Quảng Bình",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tour du lịch nào đến Bình Định hiện có?",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Cho tôi thông tin tour Kiên Giang",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tôi muốn đăng ký tour đi Long An",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tour du lịch nào đến Hưng Yên hiện có?",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tìm tour Hà Tĩnh cho tôi",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tôi muốn khám phá Phú Thọ qua tour",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tôi muốn đi tour Kon Tum",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Bạn có tour nào tới Quảng Ninh không?",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tôi muốn đi tour Tuyên Quang",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Có tour nào tại Thanh Hóa không?",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Bạn gợi ý tour nào ở Cần Thơ không?",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Bạn có tour nào tới Tây Ninh không?",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tìm tour Bạc Liêu cho tôi",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Bạn gợi ý tour nào ở Hưng Yên không?",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tìm tour Yên Bái cho tôi",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Có tour nào tại Hà Tĩnh không?",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tôi muốn đặt tour đi Lào Cai",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tôi muốn khám phá Cao Bằng qua tour",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Cho tôi thông tin tour Hưng Yên",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tôi muốn khám phá Phú Yên qua tour",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tôi muốn khám phá Khánh Hòa qua tour",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Cho tôi thông tin tour Bắc Ninh",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tôi quan tâm tour đến Khánh Hòa",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tôi muốn đi tour Bắc Ninh",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tôi cần đặt tour ở Quảng Ninh",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Có tour nào ở Đắk Nông không?",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Có tour nào ở Tây Ninh không?",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tôi muốn khám phá Vĩnh Long qua tour",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tôi quan tâm tour đến Hưng Yên",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tôi muốn đi tour Lào Cai",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tôi cần đặt tour ở Đắk Lắk",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Cho tôi thông tin tour Cần Thơ",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Có tour nào tại Đà Nẵng không?",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tôi muốn đặt tour đi Hà Giang",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tôi quan tâm tour đến Kiên Giang",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Bạn gợi ý tour nào ở Hải Phòng không?",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tôi cần đặt tour ở Bạc Liêu",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tôi muốn khám phá Đắk Lắk qua tour",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Bạn có tour nào tới TP. Hồ Chí Minh không?",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Bạn có tour nào tới Hà Nam không?",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Bạn có tour nào tới Phú Yên không?",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tour du lịch nào đến Hà Nội hiện có?",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tôi muốn đi tour Quảng Ninh",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Cho tôi thông tin tour Hải Dương",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tôi quan tâm tour đến Đắk Nông",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Có tour nào tại Bình Thuận không?",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Có tour nào tại Thừa Thiên Huế không?",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Có tour nào tại Hòa Bình không?",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tôi muốn đặt tour đi Bình Dương",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tôi muốn đặt tour đi Yên Bái",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tôi muốn đặt tour đi Quảng Trị",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tư vấn tour du lịch tại Yên Bái giúp tôi",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tư vấn tour du lịch tại Yên Bái giúp tôi",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tư vấn tour du lịch tại Cao Bằng giúp tôi",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tôi muốn đặt tour đi Hòa Bình",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tìm tour Quảng Trị cho tôi",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tôi muốn đi tour Điện Biên",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tôi quan tâm tour đến Sóc Trăng",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Tôi muốn khám phá Thái Nguyên qua tour",
+    "intent": "find_tour_with_location"
+  },
+  {
+    "query": "Bạn có tour nào đi Thái Bình vào dịp lễ tới không?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour nào tới Quảng Trị giữa tháng 11 bạn gợi ý?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour Hà Tĩnh khởi hành trong tháng 6",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tôi muốn tour Tây Ninh vào cuối tháng 5",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Có tour nào đến Ninh Thuận khởi hành từ ngày 11/9 không?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tôi muốn đi tour Thái Nguyên vào vào kỳ nghỉ hè",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour Bình Phước khởi hành từ ngày 27/2",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Bạn có tour nào đi Hậu Giang vào ngày 7/4 không?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Có tour Lạng Sơn nào ngày 9/6 không?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Bạn có tour nào đi Quảng Ngãi vào vào dịp hè tháng 2 không?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Bạn có tour nào đi Hải Phòng vào đầu tháng 11 không?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Bạn có tour nào đi Hưng Yên vào từ ngày 1/2 không?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour Cà Mau khoảng cuối tháng 9",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour nào tới Cà Mau vào thời điểm khoảng 6/6 bạn gợi ý?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour Kon Tum khoảng tuần đầu tháng 8",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tìm tour Lạng Sơn khởi hành trong khoảng 11/5",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Bạn có tour nào đi Long An vào tháng 9 không?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour Khánh Hòa dịp lễ tới có không?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Có tour Yên Bái nào cuối tháng 5 không?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tôi cần tour Tuyên Quang vào trong khoảng 7/2",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour Thừa Thiên Huế khoảng trong tháng 5",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tìm tour Vĩnh Phúc khởi hành tháng 7 năm nay",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour Trà Vinh khởi hành tháng 4 năm nay",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tôi định đi Thừa Thiên Huế vào giữa tháng 2, tour nào phù hợp?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour Tiền Giang khởi hành trong khoảng 5/4",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tôi định đi Quảng Nam vào giữa tháng 6, tour nào phù hợp?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tôi muốn đi tour Vĩnh Phúc vào vào đầu tháng 3",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour nào tới Cần Thơ cuối tuần sau bạn gợi ý?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour Cà Mau khoảng tháng 8",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour Quảng Ngãi khoảng vào kỳ nghỉ hè",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tôi muốn đi Tây Ninh vào vào dịp hè tháng 3, có tour không?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour Quảng Trị khởi hành vào thời điểm khoảng 18/1",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour Tây Ninh tuần đầu tháng 9 có không?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour Vĩnh Phúc khởi hành vào ngày 17/5",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tôi muốn đi tour Lai Châu vào tháng 6 năm nay",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour Cà Mau khởi hành trong tháng 1",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tôi muốn đặt tour Sóc Trăng tuần đầu tháng 12",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour Bình Phước khoảng ngày 26 tháng 1",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tôi muốn đặt tour Cần Thơ trong tháng 2",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tôi muốn đặt tour Thanh Hóa từ ngày 8/1",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tìm tour Quảng Ngãi khởi hành vào thời điểm khoảng 4/2",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Có tour nào đến Kiên Giang khởi hành đầu tháng 5 không?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour Bắc Giang khởi hành đầu tháng 12",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Có tour Bình Phước nào vào ngày 21/3 không?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour Hải Dương vào đầu tháng 4 có không?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour Bình Định khởi hành trong khoảng 13/2",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour Đà Nẵng khoảng cuối tháng 6",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tôi muốn đi Cao Bằng vào vào kỳ nghỉ hè, có tour không?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tôi cần tour Nam Định vào từ ngày 18/3",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour Tiền Giang dịp lễ tới có không?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour Bình Phước khởi hành tuần đầu tháng 8",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Có tour Quảng Ngãi nào dịp lễ tới không?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tìm tour Thái Bình khởi hành cuối tuần sau",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tôi muốn đi tour Nam Định vào vào thời điểm khoảng 12/3",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tôi muốn đặt tour Hòa Bình tháng 1",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tôi muốn đi Hưng Yên vào ngày 24/8, có tour không?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tôi định đi Bà Rịa - Vũng Tàu vào ngày 29/6, tour nào phù hợp?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tôi định đi Tuyên Quang vào vào thời điểm khoảng 2/7, tour nào phù hợp?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tôi muốn đi tour Nam Định vào ngày 22/4",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Bạn có tour nào đi Đồng Tháp vào đầu tháng 9 không?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Bạn có tour nào đi Quảng Ngãi vào vào kỳ nghỉ hè không?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Có tour Nghệ An nào trong tháng 1 không?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tôi muốn đi tour Điện Biên vào từ ngày 29/7",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour Hà Nội cuối tuần sau có không?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour Quảng Ngãi từ ngày 20/7 có không?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tôi muốn tour Phú Yên vào giữa tháng 4",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Có tour Hà Giang nào từ ngày 8/7 không?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tìm tour Yên Bái khởi hành tuần đầu tháng 10",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour Quảng Bình khởi hành trong khoảng 31/5",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Có tour nào đến Nghệ An khởi hành trong tháng 3 không?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Có tour nào đến Hà Giang khởi hành ngày 11/6 không?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tôi định đi Tiền Giang vào tuần đầu tháng 8, tour nào phù hợp?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Có tour Hưng Yên nào tháng 8 không?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tôi muốn đặt tour Yên Bái cuối tuần sau",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tôi muốn đặt tour Thái Nguyên tháng 3",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour Long An trong khoảng 22/6 có không?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour Nghệ An khởi hành tháng 3",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour Kiên Giang khoảng vào ngày 10/2",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Có tour nào đến Yên Bái khởi hành trong tháng 12 không?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour nào tới Bến Tre tuần đầu tháng 7 bạn gợi ý?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tôi muốn đi Hà Nam vào cuối tuần sau, có tour không?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour Bình Thuận khoảng vào kỳ nghỉ hè",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour Quảng Ngãi khởi hành tuần đầu tháng 12",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tôi định đi Thái Nguyên vào dịp lễ tới, tour nào phù hợp?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tôi muốn tour Quảng Bình vào giữa tháng 1",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tôi muốn đi tour Cà Mau vào tháng 4 năm nay",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tìm tour Hải Dương khởi hành dịp lễ tới",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour Cao Bằng khoảng vào kỳ nghỉ hè",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour TP. Hồ Chí Minh khoảng ngày 21 tháng 7",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tôi muốn đi tour Bến Tre vào đầu tháng 5",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour Nam Định khởi hành trong khoảng 31/7",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour Tây Ninh giữa tháng 9 có không?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Có tour nào đến Thanh Hóa khởi hành cuối tuần sau không?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour Hà Nội khởi hành cuối tháng 10",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour TP. Hồ Chí Minh vào thời điểm khoảng 2/12 có không?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Bạn có tour nào đi Nam Định vào giữa tháng 4 không?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour nào tới Quảng Trị vào đầu tháng 3 bạn gợi ý?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour Sóc Trăng khởi hành vào ngày 29/5",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Có tour Nghệ An nào đầu tháng 11 không?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tôi muốn đi tour Bắc Giang vào vào đầu tháng 8",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tôi muốn đi Cao Bằng vào ngày 1 tháng 8, có tour không?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Có tour nào đến Sóc Trăng khởi hành tháng 3 không?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Bạn có tour nào đi Thái Nguyên vào tháng 11 không?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tôi định đi Đà Nẵng vào vào dịp hè tháng 4, tour nào phù hợp?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tìm tour Bắc Giang khởi hành vào đầu tháng 5",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tôi muốn đi tour Đắk Lắk vào vào kỳ nghỉ hè",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour nào tới Bà Rịa - Vũng Tàu dịp lễ tới bạn gợi ý?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour Hà Nội khởi hành tháng 6",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tôi muốn đặt tour Tuyên Quang đầu tháng 10",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour Quảng Trị khởi hành từ ngày 18/9",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tôi muốn đi tour Lâm Đồng vào vào dịp hè tháng 6",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tôi muốn đi tour Bình Dương vào vào ngày 6/12",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour nào tới Bình Dương vào ngày 24/9 bạn gợi ý?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour nào tới Quảng Trị trong tháng 5 bạn gợi ý?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tôi muốn tour Bình Thuận vào ngày 8 tháng 12",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Có tour TP. Hồ Chí Minh nào tuần đầu tháng 4 không?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Có tour Kiên Giang nào giữa tháng 4 không?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Có tour nào đến Đồng Nai khởi hành tháng 1 năm nay không?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tôi định đi Thái Nguyên vào tháng 1 năm nay, tour nào phù hợp?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Bạn có tour nào đi Bình Thuận vào vào ngày 29/6 không?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Có tour Thanh Hóa nào cuối tuần sau không?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Có tour nào đến Đồng Tháp khởi hành vào đầu tháng 8 không?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Có tour nào đến Hà Giang khởi hành trong khoảng 10/2 không?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tôi muốn đặt tour Đà Nẵng ngày 8 tháng 11",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Có tour nào đến Quảng Bình khởi hành giữa tháng 9 không?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tôi cần tour Quảng Nam vào vào đầu tháng 9",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour Bắc Giang khởi hành vào thời điểm khoảng 4/3",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tìm tour Đắk Nông khởi hành tuần đầu tháng 10",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tôi muốn đi tour Nam Định vào ngày 7 tháng 8",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tôi cần tour Phú Yên vào cuối tháng 7",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour Quảng Bình khoảng dịp lễ tới",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour Ninh Bình khởi hành vào dịp hè tháng 11",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour Thái Nguyên khoảng ngày 4 tháng 4",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tìm tour Trà Vinh khởi hành ngày 15/10",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour Đà Nẵng khởi hành ngày 17 tháng 5",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tìm tour Bắc Kạn khởi hành đầu tháng 6",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour nào tới Bình Dương tuần đầu tháng 2 bạn gợi ý?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tôi muốn đi Lạng Sơn vào ngày 10/9, có tour không?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tìm tour Cà Mau khởi hành cuối tuần sau",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tìm tour Bình Thuận khởi hành tháng 12 năm nay",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tôi muốn đi tour Vĩnh Long vào cuối tháng 9",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tôi muốn tour Ninh Thuận vào trong khoảng 22/11",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour Cần Thơ dịp lễ tới có không?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Có tour Hà Giang nào vào kỳ nghỉ hè không?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Bạn có tour nào đi Khánh Hòa vào trong tháng 12 không?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour Phú Yên khởi hành đầu tháng 6",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tôi muốn đi Cần Thơ vào vào đầu tháng 2, có tour không?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour Sóc Trăng khởi hành trong tháng 2",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour Hà Tĩnh khoảng tháng 1",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour Kon Tum khởi hành vào kỳ nghỉ hè",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tôi muốn đi Hậu Giang vào tháng 12, có tour không?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tôi muốn đi tour Vĩnh Phúc vào cuối tuần sau",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tôi định đi Khánh Hòa vào vào dịp hè tháng 10, tour nào phù hợp?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tìm tour Hậu Giang khởi hành dịp lễ tới",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour Nam Định khoảng ngày 17/1",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tôi muốn đặt tour Lạng Sơn vào dịp hè tháng 1",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Có tour Tuyên Quang nào ngày 7/8 không?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tôi cần tour Trà Vinh vào cuối tuần sau",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tôi muốn đi tour Đà Nẵng vào vào thời điểm khoảng 2/6",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour Bắc Kạn khoảng từ ngày 21/10",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tìm tour Tiền Giang khởi hành khoảng 27/11",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tôi muốn đặt tour Quảng Trị vào dịp hè tháng 11",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour Quảng Ninh khởi hành từ ngày 6/5",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tôi muốn đặt tour Phú Thọ vào dịp hè tháng 11",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour Sơn La khởi hành vào đầu tháng 5",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Có tour Bình Thuận nào dịp lễ tới không?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Có tour nào đến Tuyên Quang khởi hành cuối tháng 11 không?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour Đồng Nai khoảng vào kỳ nghỉ hè",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tôi muốn đặt tour Vĩnh Long tháng 8",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour Tây Ninh khởi hành dịp lễ tới",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour nào tới Khánh Hòa trong tháng 7 bạn gợi ý?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tìm tour Thái Bình khởi hành vào đầu tháng 3",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tôi cần tour Tuyên Quang vào vào dịp hè tháng 12",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour Hà Nội trong khoảng 7/10 có không?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour Lạng Sơn khởi hành vào kỳ nghỉ hè",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour Kiên Giang khởi hành cuối tuần sau",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Có tour nào đến Long An khởi hành giữa tháng 7 không?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour nào tới Hòa Bình cuối tuần sau bạn gợi ý?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Có tour nào đến Vĩnh Phúc khởi hành ngày 23/9 không?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tôi muốn đặt tour Bình Thuận khoảng 20/3",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tôi muốn đi Sơn La vào trong tháng 12, có tour không?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour nào tới Bình Định ngày 10 tháng 10 bạn gợi ý?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tôi cần tour Vĩnh Long vào tháng 4",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Có tour nào đến Kiên Giang khởi hành vào thời điểm khoảng 15/3 không?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour Vĩnh Phúc khởi hành từ ngày 27/4",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Có tour Quảng Ngãi nào cuối tuần sau không?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Bạn có tour nào đi Lâm Đồng vào dịp lễ tới không?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour nào tới Bình Thuận tháng 12 năm nay bạn gợi ý?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Có tour nào đến Tây Ninh khởi hành trong tháng 3 không?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tìm tour Quảng Nam khởi hành vào kỳ nghỉ hè",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Có tour Nam Định nào tuần đầu tháng 10 không?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Có tour nào đến Kon Tum khởi hành giữa tháng 7 không?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tôi định đi Vĩnh Phúc vào vào thời điểm khoảng 4/11, tour nào phù hợp?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour nào tới Bắc Giang đầu tháng 2 bạn gợi ý?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tôi muốn đi tour Khánh Hòa vào đầu tháng 8",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tôi định đi Thanh Hóa vào tuần đầu tháng 3, tour nào phù hợp?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tôi muốn đi tour Hải Phòng vào dịp lễ tới",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour Khánh Hòa ngày 7 tháng 8 có không?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tôi muốn đi Yên Bái vào vào đầu tháng 10, có tour không?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour nào tới Gia Lai giữa tháng 10 bạn gợi ý?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tôi muốn đặt tour Kiên Giang ngày 27/3",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour Hòa Bình tháng 11 có không?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Có tour nào đến Quảng Trị khởi hành tuần đầu tháng 7 không?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour nào tới Quảng Ngãi vào đầu tháng 6 bạn gợi ý?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tìm tour Hà Tĩnh khởi hành từ ngày 12/3",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tôi muốn đặt tour Vĩnh Long tuần đầu tháng 10",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Có tour nào đến Quảng Bình khởi hành khoảng 17/2 không?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour Quảng Ninh khởi hành đầu tháng 8",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tôi muốn đi tour Đồng Nai vào cuối tuần sau",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour Lai Châu khoảng dịp lễ tới",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour Cà Mau ngày 16/2 có không?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour nào tới Ninh Thuận vào thời điểm khoảng 18/9 bạn gợi ý?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour Quảng Ninh khởi hành khoảng 15/8",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tôi cần tour Tuyên Quang vào tuần đầu tháng 8",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Có tour nào đến Hà Nội khởi hành giữa tháng 11 không?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tôi muốn đi Tuyên Quang vào ngày 5 tháng 10, có tour không?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour Hà Nội khởi hành vào kỳ nghỉ hè",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Có tour nào đến Ninh Thuận khởi hành khoảng 19/8 không?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour Yên Bái tuần đầu tháng 4 có không?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tôi muốn tour Lạng Sơn vào cuối tuần sau",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour nào tới Bình Phước vào kỳ nghỉ hè bạn gợi ý?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Bạn có tour nào đi Bình Thuận vào vào kỳ nghỉ hè không?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour Khánh Hòa khởi hành cuối tuần sau",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tôi cần tour Quảng Nam vào cuối tháng 6",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour Quảng Trị vào ngày 20/6 có không?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Có tour Vĩnh Phúc nào ngày 15 tháng 2 không?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tôi muốn đi Quảng Nam vào từ ngày 10/5, có tour không?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Có tour Hưng Yên nào ngày 12 tháng 12 không?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tôi muốn đặt tour Đắk Lắk ngày 27 tháng 4",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tôi muốn đi Tiền Giang vào vào dịp hè tháng 4, có tour không?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Có tour Lâm Đồng nào dịp lễ tới không?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tôi muốn đi tour Đồng Nai vào tháng 2 năm nay",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour Bình Thuận từ ngày 3/7 có không?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tôi muốn đi Quảng Trị vào từ ngày 13/11, có tour không?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Có tour nào đến Bình Định khởi hành tháng 11 không?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour Nghệ An khởi hành từ ngày 1/3",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tôi muốn tour Kiên Giang vào vào kỳ nghỉ hè",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour nào tới Hà Nam từ ngày 29/10 bạn gợi ý?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour Bến Tre khởi hành trong tháng 3",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour Bình Định khởi hành dịp lễ tới",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour Đắk Nông khởi hành khoảng 18/7",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tôi định đi Bình Thuận vào tuần đầu tháng 8, tour nào phù hợp?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tôi muốn tour Thanh Hóa vào vào dịp hè tháng 11",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour Thừa Thiên Huế trong tháng 6 có không?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tôi muốn đi tour Nam Định vào tháng 7 năm nay",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour Bắc Kạn ngày 30 tháng 10 có không?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tìm tour Nam Định khởi hành vào kỳ nghỉ hè",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Có tour Nghệ An nào vào thời điểm khoảng 5/7 không?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour nào tới Gia Lai vào đầu tháng 12 bạn gợi ý?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tôi muốn tour Tuyên Quang vào cuối tháng 5",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tôi muốn đi Lai Châu vào trong khoảng 24/6, có tour không?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Có tour nào đến Tuyên Quang khởi hành dịp lễ tới không?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tôi cần tour Hà Nam vào cuối tuần sau",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tôi định đi Tây Ninh vào giữa tháng 9, tour nào phù hợp?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Có tour nào đến Tây Ninh khởi hành đầu tháng 2 không?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour nào tới Bắc Ninh từ ngày 3/4 bạn gợi ý?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tôi muốn đặt tour Điện Biên tháng 1",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Có tour Hậu Giang nào tháng 5 năm nay không?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tôi muốn đi tour Thanh Hóa vào trong khoảng 17/6",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tôi cần tour Khánh Hòa vào cuối tháng 11",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tìm tour Đắk Nông khởi hành cuối tháng 4",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tôi định đi Bình Thuận vào giữa tháng 5, tour nào phù hợp?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tôi cần tour Hà Tĩnh vào vào đầu tháng 1",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour Thừa Thiên Huế trong tháng 9 có không?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Có tour Bà Rịa - Vũng Tàu nào giữa tháng 7 không?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour Tuyên Quang khoảng ngày 24 tháng 9",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Có tour nào đến Cần Thơ khởi hành giữa tháng 9 không?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tôi muốn đi Sơn La vào vào thời điểm khoảng 18/3, có tour không?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour Hòa Bình khởi hành trong khoảng 18/1",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Bạn có tour nào đi Lào Cai vào cuối tháng 9 không?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour nào tới Hải Phòng đầu tháng 6 bạn gợi ý?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour Đắk Nông khoảng ngày 7/5",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tôi muốn tour An Giang vào vào dịp hè tháng 5",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour nào tới Bắc Ninh dịp lễ tới bạn gợi ý?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour Bình Thuận khởi hành vào kỳ nghỉ hè",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour nào tới Đồng Nai tháng 2 năm nay bạn gợi ý?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour TP. Hồ Chí Minh cuối tuần sau có không?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tìm tour Cà Mau khởi hành tháng 1 năm nay",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour nào tới Bắc Ninh vào thời điểm khoảng 28/10 bạn gợi ý?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour Bắc Giang khởi hành tuần đầu tháng 11",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Có tour nào đến Quảng Nam khởi hành vào đầu tháng 6 không?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tôi muốn đi Bắc Kạn vào tháng 10, có tour không?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tôi muốn đặt tour Cà Mau trong khoảng 17/10",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tìm tour Kon Tum khởi hành vào kỳ nghỉ hè",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tôi muốn đi Thái Bình vào trong khoảng 19/9, có tour không?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tôi định đi Quảng Bình vào từ ngày 3/9, tour nào phù hợp?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tôi muốn đi Hà Nam vào ngày 20/7, có tour không?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour Kiên Giang khởi hành cuối tuần sau",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tìm tour Hải Phòng khởi hành tháng 12 năm nay",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tìm tour Đà Nẵng khởi hành ngày 31/3",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour Đồng Nai khoảng vào ngày 20/12",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour Đồng Nai khoảng trong tháng 1",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour Cần Thơ khoảng trong khoảng 7/5",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tôi muốn đi tour Lạng Sơn vào cuối tháng 1",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour Thanh Hóa khoảng từ ngày 25/4",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour Bắc Ninh khởi hành tuần đầu tháng 1",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Có tour Tuyên Quang nào trong tháng 11 không?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tôi muốn đi tour Hải Phòng vào vào kỳ nghỉ hè",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Bạn có tour nào đi Thanh Hóa vào vào kỳ nghỉ hè không?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tôi muốn tour Bạc Liêu vào tháng 6",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour nào tới Quảng Bình trong tháng 12 bạn gợi ý?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tôi muốn đi Hà Tĩnh vào cuối tuần sau, có tour không?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tôi muốn đi tour Đồng Tháp vào khoảng 29/9",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour nào tới Kiên Giang tuần đầu tháng 11 bạn gợi ý?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour Quảng Trị khởi hành tuần đầu tháng 12",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Có tour Ninh Bình nào tháng 3 năm nay không?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour Nghệ An cuối tháng 2 có không?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour Hà Tĩnh khởi hành trong tháng 9",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour Cao Bằng khởi hành trong tháng 8",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tôi muốn đi tour Đắk Lắk vào trong khoảng 30/7",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour Ninh Bình khởi hành trong tháng 12",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Có tour Lai Châu nào tuần đầu tháng 9 không?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tôi định đi Bà Rịa - Vũng Tàu vào vào ngày 29/9, tour nào phù hợp?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour An Giang khởi hành vào thời điểm khoảng 17/5",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour Bến Tre trong khoảng 9/10 có không?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour Hà Tĩnh khởi hành ngày 3 tháng 11",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour Quảng Trị khởi hành vào kỳ nghỉ hè",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tìm tour Lạng Sơn khởi hành trong khoảng 23/9",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tôi muốn tour Bến Tre vào cuối tháng 5",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tour Khánh Hòa khoảng tuần đầu tháng 2",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tôi muốn đi Bến Tre vào vào kỳ nghỉ hè, có tour không?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tôi muốn đi Tiền Giang vào từ ngày 19/1, có tour không?",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tôi cần tour Long An vào giữa tháng 7",
+    "intent": "find_tour_with_location_and_time"
+  },
+  {
+    "query": "Tìm tour Đồng Tháp tour rẻ hơn 4.8 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Bạn có tour nào đến Hà Nội tài chính tầm 2.6 triệu không?",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi muốn đi tour Sơn La tour khoảng giá 1.4 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi muốn đi Vĩnh Phúc với chi phí không quá 2.1 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tour đi Phú Thọ tài chính tầm 1.0 triệu có gì không?",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tour Ninh Bình nào rẻ mức giá dưới 1.1 triệu?",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi cần tour Kon Tum mức giá dưới 5.6 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi muốn đi Bắc Giang với chi phí giá khoảng dưới 5.0 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tìm tour Hà Nội giá rẻ dưới 2.8 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi muốn đi Đắk Nông với chi phí tour khoảng giá 4.1 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Bạn có tour nào đến Gia Lai chi khoảng 3.4 triệu không?",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tìm tour Ninh Thuận tour khoảng giá 3.9 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi muốn tour Phú Yên tầm 1.5 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi muốn đi tour Quảng Ngãi dưới mức 4.3 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tour Thừa Thiên Huế nào rẻ tour giá tầm 5.8 triệu?",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi muốn đi tour Vĩnh Long chi phí khoảng 1.2 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tìm tour Sóc Trăng tour giá tầm 2.8 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi cần tour Thái Nguyên khoảng 4.0 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi cần tour Thanh Hóa khoảng 2.8 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tìm tour Hà Nam giá khoảng dưới 3.7 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi muốn đi tour Thanh Hóa chi khoảng 4.7 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi cần tour Bạc Liêu mức giá dưới 2.7 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Gợi ý tour Hà Tĩnh khoảng tour khoảng giá 3.8 triệu giúp tôi",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tìm tour Ninh Bình khoảng 2.0 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Có tour Khánh Hòa nào trong khoảng dưới 4.5 triệu không?",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi muốn đi tour Lai Châu trong khoảng dưới 2.3 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi cần tour Hà Giang trong mức giá 1.3 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tìm tour Sóc Trăng không quá 1.0 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tìm tour Bắc Giang tour giá tầm 1.2 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tour Trà Vinh nào rẻ khoảng 4.1 triệu?",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi muốn đi tour Bắc Kạn mức giá dưới 4.5 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi muốn đi Quảng Trị với chi phí trong mức giá 2.3 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi muốn đi tour Yên Bái giá rẻ dưới 1.0 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tour Phú Thọ nào rẻ giá khoảng dưới 4.1 triệu?",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tour Cà Mau tour giá tầm 3.9 triệu có không?",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tìm tour Hòa Bình tối đa 2.4 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tour đi Thừa Thiên Huế ngân sách khoảng 4.2 triệu có gì không?",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tìm tour Đắk Lắk ngân sách khoảng 3.0 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi cần tour Kon Tum ngân sách khoảng 1.4 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tour đi Quảng Nam tour rẻ hơn 1.8 triệu có gì không?",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi muốn tour Lai Châu khoảng 1.2 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Gợi ý tour Hải Phòng khoảng trong mức giá 5.3 triệu giúp tôi",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tìm tour Bình Thuận mức giá dưới 2.6 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Bạn có tour nào đến Phú Yên giá rẻ dưới 2.4 triệu không?",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi cần tour Vĩnh Long chi khoảng 2.4 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tour Bình Thuận nào rẻ khoảng 5.2 triệu?",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi muốn đi tour Quảng Bình không quá 3.4 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Có tour Thanh Hóa nào tối đa 1.2 triệu không?",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi muốn đi tour Quảng Nam dưới mức 4.2 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi muốn đi tour Vĩnh Long mức giá dưới 4.8 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi cần tour Nam Định trong mức giá 4.0 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi muốn đi Hải Dương với chi phí trong khoảng dưới 2.8 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi đang tìm tour Đắk Nông tour rẻ hơn 4.7 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Gợi ý tour Nam Định khoảng khoảng 2.0 triệu giúp tôi",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Bạn có tour nào đến Quảng Ninh tour rẻ hơn 4.1 triệu không?",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Gợi ý tour Lào Cai khoảng tour giá tầm 2.5 triệu giúp tôi",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Có tour Bến Tre nào trong mức giá 4.6 triệu không?",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tour Bắc Giang giá rẻ dưới 4.5 triệu có không?",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi muốn tour Kiên Giang không quá 1.4 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi muốn tour An Giang tối đa 3.4 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi cần tour An Giang tour rẻ hơn 1.3 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi cần tour Hà Nội trong khoảng dưới 4.4 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Bạn có tour nào đến Gia Lai tầm 1.2 triệu không?",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi muốn đi Phú Thọ với chi phí tour rẻ hơn 5.3 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi muốn tour Đồng Tháp mức giá dưới 5.5 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi muốn đi tour Trà Vinh tài chính tầm 4.8 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi muốn đi tour Hà Giang chi khoảng 1.5 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tour đi Ninh Thuận trong mức giá 2.1 triệu có gì không?",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi muốn tour Bình Thuận không quá 2.5 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Bạn có tour nào đến Cần Thơ tour giá tầm 5.9 triệu không?",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tìm tour Tây Ninh dưới mức 4.1 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tour Nghệ An nào rẻ tour khoảng giá 4.9 triệu?",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi cần tour Hà Nội giá rẻ dưới 1.7 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Bạn có tour nào đến Lâm Đồng giá khoảng dưới 2.0 triệu không?",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi cần tour Hòa Bình giá dưới 2.6 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tìm tour Ninh Thuận trong mức giá 3.3 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi cần tour Hà Nam dưới 3.3 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tìm tour Điện Biên tour giá tầm 5.8 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi muốn đi Phú Thọ với chi phí trong mức giá 5.8 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tìm tour Quảng Ninh ngân sách khoảng 1.0 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi muốn tour Khánh Hòa ngân sách khoảng 1.4 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi cần tour Hải Phòng trong khoảng dưới 5.7 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi cần tour Cần Thơ khoảng 6.0 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tour Đắk Nông nào rẻ tour rẻ hơn 1.9 triệu?",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tìm tour Ninh Thuận không quá 4.7 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi cần tour Quảng Trị dưới 5.9 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi cần tour TP. Hồ Chí Minh ngân sách khoảng 2.1 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tìm tour Tây Ninh tour khoảng giá 1.9 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi đang tìm tour Đắk Lắk mức giá dưới 1.8 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi cần tour Bắc Kạn tầm 3.4 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi muốn đi Ninh Thuận với chi phí chi phí khoảng 3.5 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi muốn đi Phú Yên với chi phí trong khoảng dưới 1.7 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tour Thanh Hóa giá rẻ dưới 2.1 triệu có không?",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tìm tour Quảng Trị giá khoảng dưới 4.7 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tour đi Thái Nguyên tour giá tầm 4.1 triệu có gì không?",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tour Nghệ An mức giá dưới 5.6 triệu có không?",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tìm tour Phú Thọ tầm 3.6 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tìm tour Cao Bằng giá dưới 1.2 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi đang tìm tour Thừa Thiên Huế trong mức giá 4.2 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tour Phú Yên nào tour khoảng giá 1.9 triệu?",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi muốn đi tour Lâm Đồng giá khoảng dưới 1.8 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tìm tour An Giang không quá 5.5 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tour Lạng Sơn mức giá dưới 2.9 triệu có không?",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tìm tour Nghệ An dưới mức 5.0 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tìm tour Quảng Nam chi khoảng 4.0 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tìm tour Tây Ninh ngân sách khoảng 1.1 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi cần tour Quảng Ninh ngân sách khoảng 1.8 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tour đi Nghệ An giá khoảng dưới 5.7 triệu có gì không?",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tour Thừa Thiên Huế nào khoảng 4.3 triệu?",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tour Yên Bái trong mức giá 4.1 triệu có không?",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Gợi ý tour Bến Tre khoảng tối đa 1.7 triệu giúp tôi",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tour Long An nào rẻ giá dưới 4.7 triệu?",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Có tour Đắk Lắk nào chi phí khoảng 5.0 triệu không?",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tìm tour Thanh Hóa chi khoảng 2.0 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi đang tìm tour Sóc Trăng giá dưới 5.7 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi muốn tour Nam Định giá dưới 5.1 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi muốn đi tour Thanh Hóa ngân sách khoảng 2.5 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi muốn đi Hải Phòng với chi phí tour khoảng giá 1.7 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Gợi ý tour Ninh Thuận khoảng tối đa 2.4 triệu giúp tôi",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi cần tour Vĩnh Long trong khoảng dưới 1.8 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tour Lai Châu nào rẻ ngân sách khoảng 4.1 triệu?",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi cần tour Hà Giang trong mức giá 4.9 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tour Long An nào rẻ tối đa 3.5 triệu?",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi muốn tour Hà Giang chi khoảng 3.3 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tìm tour Thừa Thiên Huế trong khoảng dưới 1.8 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Gợi ý tour Hải Dương khoảng dưới mức 2.9 triệu giúp tôi",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Gợi ý tour Lạng Sơn khoảng ngân sách khoảng 3.5 triệu giúp tôi",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi muốn tour Long An tối đa 6.0 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tìm tour Trà Vinh mức giá dưới 1.6 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Bạn có tour nào đến Thái Nguyên giá khoảng dưới 3.2 triệu không?",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Có tour Ninh Thuận nào chi phí khoảng 1.1 triệu không?",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi cần tour Hà Giang chi phí khoảng 4.0 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tour Hậu Giang nào dưới mức 4.3 triệu?",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tìm tour Gia Lai tài chính tầm 3.9 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi muốn tour Tiền Giang trong mức giá 3.9 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tour TP. Hồ Chí Minh nào rẻ dưới 5.4 triệu?",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tour Tây Ninh nào rẻ giá dưới 3.1 triệu?",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi muốn đi Thái Bình với chi phí ngân sách khoảng 5.2 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi muốn đi tour Hưng Yên giá rẻ dưới 4.4 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi cần tour Hưng Yên dưới mức 1.8 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tour Cần Thơ giá dưới 4.3 triệu có không?",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi muốn đi tour TP. Hồ Chí Minh giá dưới 3.1 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tour Trà Vinh không quá 2.7 triệu có không?",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi cần tour Hà Nam chi khoảng 1.6 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Gợi ý tour Thái Bình khoảng khoảng 4.5 triệu giúp tôi",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi đang tìm tour Hải Dương chi khoảng 3.5 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Có tour Hải Dương nào ngân sách khoảng 3.0 triệu không?",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi đang tìm tour Thanh Hóa chi phí khoảng 2.6 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi muốn tour Hòa Bình tối đa 4.5 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi muốn đi tour Bắc Kạn ngân sách khoảng 4.4 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi đang tìm tour Sơn La chi khoảng 4.3 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi đang tìm tour Bình Thuận tối đa 2.3 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tour Bạc Liêu nào tour giá tầm 4.6 triệu?",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi cần tour Gia Lai tài chính tầm 2.0 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi muốn đi tour Hải Dương dưới mức 2.3 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi cần tour TP. Hồ Chí Minh chi phí khoảng 2.4 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi muốn tour Quảng Ngãi dưới 4.1 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Gợi ý tour Hà Nội khoảng tối đa 5.6 triệu giúp tôi",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi muốn đi Lâm Đồng với chi phí dưới mức 1.9 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tour Gia Lai trong mức giá 2.6 triệu có không?",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tour Lai Châu nào trong mức giá 2.7 triệu?",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Có tour Quảng Ninh nào tour khoảng giá 2.2 triệu không?",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi muốn đi Hậu Giang với chi phí dưới mức 3.4 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tour TP. Hồ Chí Minh nào chi phí khoảng 2.5 triệu?",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tour Quảng Ninh nào tour rẻ hơn 4.0 triệu?",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi đang tìm tour Quảng Trị dưới mức 2.6 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi muốn tour An Giang giá dưới 1.1 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Gợi ý tour Bắc Kạn khoảng trong mức giá 5.0 triệu giúp tôi",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tìm tour Đắk Lắk chi phí khoảng 3.8 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tour Hưng Yên nào rẻ giá rẻ dưới 4.5 triệu?",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Gợi ý tour Lai Châu khoảng mức giá dưới 3.6 triệu giúp tôi",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tour Quảng Bình ngân sách khoảng 5.9 triệu có không?",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi muốn đi Cần Thơ với chi phí tầm 4.0 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tour đi Cần Thơ giá dưới 4.6 triệu có gì không?",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tìm tour Hà Giang khoảng 1.8 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tìm tour Cao Bằng giá khoảng dưới 5.3 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi muốn tour Cà Mau giá khoảng dưới 2.1 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi cần tour Sơn La chi khoảng 1.3 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tìm tour Sơn La không quá 4.3 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Có tour Quảng Bình nào tour giá tầm 4.6 triệu không?",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Có tour Thừa Thiên Huế nào giá dưới 5.3 triệu không?",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi muốn đi Sóc Trăng với chi phí tour khoảng giá 2.4 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi cần tour Vĩnh Long tài chính tầm 3.4 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi muốn tour Tuyên Quang giá dưới 5.4 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tour Lào Cai nào rẻ dưới 4.6 triệu?",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Có tour Đà Nẵng nào trong khoảng dưới 5.4 triệu không?",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tour Hà Tĩnh nào rẻ tài chính tầm 3.9 triệu?",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Bạn có tour nào đến Quảng Trị mức giá dưới 2.6 triệu không?",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tour Gia Lai nào rẻ chi phí khoảng 1.1 triệu?",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi cần tour Trà Vinh dưới 6.0 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tìm tour Quảng Trị tour khoảng giá 5.7 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tìm tour Quảng Bình trong mức giá 2.5 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi muốn đi Thái Bình với chi phí mức giá dưới 4.7 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi đang tìm tour Sơn La giá dưới 2.0 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Gợi ý tour Bắc Kạn khoảng dưới 1.5 triệu giúp tôi",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tour Vĩnh Long nào rẻ chi khoảng 5.8 triệu?",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tour đi Thừa Thiên Huế tầm 1.8 triệu có gì không?",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tour đi An Giang trong mức giá 2.5 triệu có gì không?",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi cần tour Phú Thọ giá rẻ dưới 2.8 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi cần tour Bình Phước tour rẻ hơn 4.3 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi đang tìm tour Đắk Lắk không quá 4.4 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi muốn tour Lâm Đồng dưới mức 4.7 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi muốn tour Tiền Giang tour khoảng giá 3.6 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tour Bình Phước khoảng 2.0 triệu có không?",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi đang tìm tour Cà Mau trong mức giá 5.6 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Gợi ý tour Hậu Giang khoảng dưới 4.9 triệu giúp tôi",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Bạn có tour nào đến Quảng Trị giá dưới 1.1 triệu không?",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tour Phú Yên nào rẻ khoảng 5.3 triệu?",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi cần tour An Giang tour khoảng giá 3.7 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi đang tìm tour Đồng Tháp tài chính tầm 4.8 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Gợi ý tour Long An khoảng trong khoảng dưới 4.3 triệu giúp tôi",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tìm tour Ninh Thuận trong mức giá 3.1 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi đang tìm tour Trà Vinh mức giá dưới 4.8 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Gợi ý tour Tiền Giang khoảng chi khoảng 4.4 triệu giúp tôi",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Gợi ý tour Bình Thuận khoảng ngân sách khoảng 2.0 triệu giúp tôi",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tìm tour Quảng Trị giá dưới 3.9 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi cần tour Thừa Thiên Huế mức giá dưới 2.3 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Gợi ý tour Thái Nguyên khoảng trong mức giá 4.2 triệu giúp tôi",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi đang tìm tour Bà Rịa - Vũng Tàu giá khoảng dưới 1.2 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi muốn đi tour Kon Tum trong mức giá 3.8 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tour Bắc Kạn nào rẻ giá rẻ dưới 5.9 triệu?",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tour Ninh Thuận dưới 5.2 triệu có không?",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi muốn tour Ninh Thuận không quá 3.2 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi muốn đi Quảng Ninh với chi phí tour rẻ hơn 5.2 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi muốn tour Kiên Giang mức giá dưới 3.5 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Có tour Bến Tre nào tour rẻ hơn 2.9 triệu không?",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi đang tìm tour Hải Phòng khoảng 1.4 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi cần tour An Giang giá dưới 4.8 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi muốn đi Tiền Giang với chi phí chi phí khoảng 3.9 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tìm tour Hà Nam giá khoảng dưới 5.4 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi muốn đi tour Bắc Giang tầm 5.9 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tour Phú Thọ nào không quá 6.0 triệu?",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi cần tour Thanh Hóa chi phí khoảng 1.7 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tour đi Cần Thơ dưới mức 1.3 triệu có gì không?",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tìm tour Quảng Bình trong mức giá 6.0 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi muốn đi tour Quảng Ninh giá khoảng dưới 5.7 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi muốn đi Đồng Tháp với chi phí chi phí khoảng 1.8 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tour Bình Định khoảng 5.6 triệu có không?",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tìm tour Đồng Tháp khoảng 3.1 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tour Đắk Lắk dưới mức 4.3 triệu có không?",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi cần tour Tây Ninh trong khoảng dưới 3.3 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi đang tìm tour Lào Cai khoảng 4.0 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tìm tour Hậu Giang tour giá tầm 3.6 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Gợi ý tour Quảng Nam khoảng mức giá dưới 1.7 triệu giúp tôi",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Gợi ý tour Cao Bằng khoảng giá khoảng dưới 4.2 triệu giúp tôi",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi muốn đi tour Đồng Nai trong khoảng dưới 1.9 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Gợi ý tour Hà Giang khoảng mức giá dưới 5.1 triệu giúp tôi",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Gợi ý tour An Giang khoảng giá khoảng dưới 4.6 triệu giúp tôi",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tìm tour Hải Phòng khoảng 2.6 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi cần tour Hà Nội tour giá tầm 5.7 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi đang tìm tour Bạc Liêu trong khoảng dưới 1.3 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tour TP. Hồ Chí Minh nào rẻ giá rẻ dưới 3.1 triệu?",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Gợi ý tour Đắk Lắk khoảng dưới mức 5.8 triệu giúp tôi",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Có tour Sóc Trăng nào trong mức giá 1.8 triệu không?",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tour Bạc Liêu nào rẻ trong khoảng dưới 1.7 triệu?",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi muốn tour Kiên Giang giá khoảng dưới 4.7 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tìm tour Bình Định tour rẻ hơn 4.6 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tour Quảng Ngãi nào rẻ tour giá tầm 5.5 triệu?",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tour Hòa Bình nào rẻ giá khoảng dưới 4.2 triệu?",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi muốn đi Thừa Thiên Huế với chi phí ngân sách khoảng 3.9 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tour đi Hòa Bình giá rẻ dưới 4.3 triệu có gì không?",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Bạn có tour nào đến Hậu Giang chi khoảng 3.0 triệu không?",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tour Thái Nguyên nào khoảng 1.8 triệu?",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tìm tour Phú Thọ giá dưới 5.4 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi muốn đi Long An với chi phí tour giá tầm 2.8 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Gợi ý tour Gia Lai khoảng tầm 2.2 triệu giúp tôi",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tour Trà Vinh dưới 1.7 triệu có không?",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi cần tour Cần Thơ ngân sách khoảng 1.1 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tour Bắc Ninh nào tầm 3.7 triệu?",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi đang tìm tour Thái Bình tài chính tầm 2.8 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi muốn đi tour Bình Định chi khoảng 5.4 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi cần tour Vĩnh Phúc chi phí khoảng 3.9 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi muốn đi tour Hà Giang tour giá tầm 3.9 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tour đi Vĩnh Long khoảng 5.4 triệu có gì không?",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tìm tour Bình Phước tối đa 4.3 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tìm tour Bắc Giang dưới mức 3.7 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi đang tìm tour Quảng Bình tour rẻ hơn 4.6 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tour đi Bình Dương dưới mức 1.4 triệu có gì không?",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Có tour Bình Thuận nào tầm 3.7 triệu không?",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi muốn tour TP. Hồ Chí Minh giá khoảng dưới 5.0 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi muốn đi tour Hà Giang trong mức giá 1.8 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tour đi Kon Tum trong mức giá 5.2 triệu có gì không?",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tìm tour Long An giá rẻ dưới 3.9 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi đang tìm tour Hà Nội khoảng 1.9 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tour Phú Yên nào mức giá dưới 1.7 triệu?",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi muốn đi tour Bình Định khoảng 2.5 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi muốn đi Thừa Thiên Huế với chi phí tối đa 4.7 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi muốn đi tour Kiên Giang tối đa 5.0 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi muốn đi tour Cao Bằng tour giá tầm 5.3 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tour Quảng Ngãi nào rẻ tour rẻ hơn 4.8 triệu?",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Gợi ý tour Nam Định khoảng dưới 4.8 triệu giúp tôi",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi muốn đi Đồng Nai với chi phí tour khoảng giá 5.4 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tour đi Gia Lai trong mức giá 1.3 triệu có gì không?",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tìm tour Thanh Hóa tối đa 5.1 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi muốn đi tour Phú Yên tour giá tầm 1.2 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi muốn tour Đồng Nai dưới 3.9 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tour Bến Tre nào rẻ ngân sách khoảng 4.1 triệu?",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi cần tour Hà Giang tour rẻ hơn 5.9 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Có tour Long An nào mức giá dưới 1.2 triệu không?",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tour Bạc Liêu nào giá rẻ dưới 1.2 triệu?",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Có tour Khánh Hòa nào tour khoảng giá 3.9 triệu không?",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tìm tour Tuyên Quang chi phí khoảng 4.3 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi đang tìm tour Quảng Bình tour rẻ hơn 1.9 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tour Đồng Nai khoảng 4.6 triệu có không?",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi muốn đi tour Thanh Hóa mức giá dưới 3.4 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tìm tour Lâm Đồng ngân sách khoảng 2.5 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi muốn tour Bạc Liêu tour giá tầm 3.8 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi muốn đi tour Bạc Liêu tầm 1.6 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi đang tìm tour Cần Thơ dưới mức 1.3 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tìm tour Sơn La trong khoảng dưới 2.6 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi cần tour Sơn La dưới 5.9 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tour Bắc Giang nào rẻ tối đa 1.6 triệu?",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi muốn đi tour Bình Thuận dưới 1.4 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi đang tìm tour Hà Nội dưới 3.3 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi muốn đi Khánh Hòa với chi phí giá rẻ dưới 5.8 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tour Hà Nam nào rẻ tối đa 5.1 triệu?",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tìm tour Tuyên Quang ngân sách khoảng 3.5 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Có tour Bắc Ninh nào giá rẻ dưới 1.8 triệu không?",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi muốn đi tour Lai Châu giá dưới 1.3 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tour đi Hậu Giang trong mức giá 3.4 triệu có gì không?",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tìm tour Long An giá dưới 4.2 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tour Trà Vinh trong khoảng dưới 2.4 triệu có không?",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Có tour Vĩnh Phúc nào chi khoảng 5.6 triệu không?",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tour Hà Nội nào rẻ tour khoảng giá 2.8 triệu?",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tìm tour Quảng Ninh trong khoảng dưới 1.2 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Có tour Cao Bằng nào tài chính tầm 4.7 triệu không?",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi cần tour Phú Thọ dưới 2.2 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Gợi ý tour Tiền Giang khoảng dưới 5.6 triệu giúp tôi",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tour Thanh Hóa giá dưới 5.1 triệu có không?",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tour Phú Thọ nào rẻ giá khoảng dưới 4.5 triệu?",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tour Bà Rịa - Vũng Tàu ngân sách khoảng 5.5 triệu có không?",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi muốn tour Nam Định chi khoảng 1.6 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Gợi ý tour Hà Nam khoảng mức giá dưới 2.7 triệu giúp tôi",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi đang tìm tour Lào Cai tour rẻ hơn 2.7 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi muốn đi tour Điện Biên chi phí khoảng 1.6 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tour Đồng Nai nào rẻ chi phí khoảng 5.6 triệu?",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi muốn đi tour Đắk Lắk khoảng 2.9 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tour đi Vĩnh Long tour rẻ hơn 5.4 triệu có gì không?",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tour TP. Hồ Chí Minh giá khoảng dưới 4.4 triệu có không?",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi cần tour Hưng Yên giá rẻ dưới 5.2 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tour đi Đắk Lắk không quá 1.7 triệu có gì không?",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Bạn có tour nào đến Quảng Nam trong khoảng dưới 2.8 triệu không?",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tìm tour Long An tour rẻ hơn 3.9 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tìm tour Đồng Tháp tour rẻ hơn 5.8 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Gợi ý tour Bình Phước khoảng chi khoảng 5.5 triệu giúp tôi",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi muốn tour Lâm Đồng giá rẻ dưới 3.1 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi muốn tour Hải Dương tour khoảng giá 2.7 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi cần tour Bến Tre tour khoảng giá 1.7 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi muốn đi tour Phú Yên khoảng 1.9 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi đang tìm tour Quảng Ninh trong mức giá 3.0 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Gợi ý tour Vĩnh Phúc khoảng tour khoảng giá 3.7 triệu giúp tôi",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Gợi ý tour Tuyên Quang khoảng giá khoảng dưới 2.1 triệu giúp tôi",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi muốn tour Vĩnh Long giá rẻ dưới 3.6 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi muốn đi Bình Dương với chi phí chi phí khoảng 2.8 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Tôi đang tìm tour Nghệ An dưới 1.5 triệu",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Có tour Cà Mau nào ngân sách khoảng 5.1 triệu không?",
+    "intent": "find_tour_with_location_and_price"
+  },
+  {
+    "query": "Hôm nay thời tiết thế nào?",
+    "intent": "out_of_scope"
+  },
+  {
+    "query": "Ai là tổng thống Việt Nam?",
+    "intent": "out_of_scope"
+  },
+  {
+    "query": "Bạn tên gì?",
+    "intent": "out_of_scope"
+  },
+  {
+    "query": "Làm sao để nấu phở?",
+    "intent": "out_of_scope"
+  },
+  {
+    "query": "Tôi muốn học tiếng Anh",
+    "intent": "out_of_scope"
+  },
+  {
+    "query": "Máy tính của tôi bị hư",
+    "intent": "out_of_scope"
+  },
+  {
+    "query": "Bạn có thể kể chuyện không?",
+    "intent": "out_of_scope"
+  },
+  {
+    "query": "Tôi đang buồn quá",
+    "intent": "out_of_scope"
+  },
+  {
+    "query": "Giúp tôi giải toán với",
+    "intent": "out_of_scope"
+  },
+  {
+    "query": "Bạn có biết chơi cờ vua không?",
+    "intent": "out_of_scope"
+  },
+  {
+    "query": "Tôi muốn đi du lịch nước ngoài",
+    "intent": "out_of_scope"
+  },
+  {
+    "query": "Có gì hay ở Đà Nẵng không?",
+    "intent": "out_of_scope"
+  },
+  {
+    "query": "Tôi muốn đặt mua điện thoại",
+    "intent": "out_of_scope"
+  },
+  {
+    "query": "Làm sao để sửa xe máy?",
+    "intent": "out_of_scope"
+  },
+  {
+    "query": "Tôi bị mất điện thoại rồi",
+    "intent": "out_of_scope"
+  },
+  {
+    "query": "Bạn có biết chơi guitar không?",
+    "intent": "out_of_scope"
+  },
+  {
+    "query": "Bạn có thể kể một câu chuyện cười không?",
+    "intent": "out_of_scope"
+  },
+  {
+    "query": "Làm sao để giảm cân hiệu quả?",
+    "intent": "out_of_scope"
+  },
+  {
+    "query": "Bài hát đang nổi hiện nay là gì?",
+    "intent": "out_of_scope"
+  },
+  {
+    "query": "Con mèo của tôi bị ốm",
+    "intent": "out_of_scope"
+  },
+  {
+    "query": "Trái đất quay quanh mặt trời bao lâu?",
+    "intent": "out_of_scope"
+  },
+  {
+    "query": "Tôi muốn học lập trình Python",
+    "intent": "out_of_scope"
+  },
+  {
+    "query": "Bạn có thể nói tiếng Anh không?",
+    "intent": "out_of_scope"
+  },
+  {
+    "query": "Hôm nay có phim gì hay không?",
+    "intent": "out_of_scope"
+  },
+  {
+    "query": "Cách trồng cây cà chua như thế nào?",
+    "intent": "out_of_scope"
+  },
+  {
+    "query": "Tôi đang tìm việc làm",
+    "intent": "out_of_scope"
+  },
+  {
+    "query": "Nên đầu tư vào cổ phiếu nào?",
+    "intent": "out_of_scope"
+  },
+  {
+    "query": "Lịch sử Việt Nam bắt đầu từ khi nào?",
+    "intent": "out_of_scope"
+  },
+  {
+    "query": "Tôi bị đau đầu, phải làm sao?",
+    "intent": "out_of_scope"
+  },
+  {
+    "query": "Bạn có thể làm thơ không?",
+    "intent": "out_of_scope"
+  },
+  {
+    "query": "Cho tôi công thức nấu bánh mì",
+    "intent": "out_of_scope"
+  },
+  {
+    "query": "Tôi muốn nghe nhạc",
+    "intent": "out_of_scope"
+  },
+  {
+    "query": "Tôi đang buồn, bạn giúp tôi được không?",
+    "intent": "out_of_scope"
+  },
+  {
+    "query": "Làm sao để thi đậu đại học?",
+    "intent": "out_of_scope"
+  },
+  {
+    "query": "Bạn có biết ai là ca sĩ nổi tiếng nhất không?",
+    "intent": "out_of_scope"
+  },
+  {
+    "query": "Hãy nói cho tôi một bí mật",
+    "intent": "out_of_scope"
+  },
+  {
+    "query": "Thời gian bay từ Hà Nội đến Tokyo là bao lâu?",
+    "intent": "out_of_scope"
+  },
+  {
+    "query": "Cách chơi Liên Quân Mobile là gì?",
+    "intent": "out_of_scope"
+  },
+  {
+    "query": "Số pi có bao nhiêu chữ số?",
+    "intent": "out_of_scope"
+  },
+  {
+    "query": "Bạn có thể gọi pizza giúp tôi không?",
+    "intent": "out_of_scope"
+  },
+  {
+    "query": "Sài Gòn có mưa không hôm nay?",
+    "intent": "out_of_scope"
+  },
+  {
+    "query": "Bạn nghĩ gì về trí tuệ nhân tạo?",
+    "intent": "out_of_scope"
+  }
+]

@@ -1,0 +1,4 @@
+.venv/
+
+scripts/models/
+scripts/phobert_intent_finetuned/

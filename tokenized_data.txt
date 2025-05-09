@@ -1,0 +1,525 @@
+có O
+tour O
+nào O
+ở O
+Phú_Quốc B-LOC
+không O
+
+tôi O
+muốn O
+đi O
+Huế B-LOC
+vào O
+tháng B-DATE
+4 I-DATE
+
+tôi O
+thích O
+khám_phá O
+thành_phố O
+Đà_Nẵng B-LOC
+
+tour O
+đi O
+Sa_Pa B-LOC
+3 B-DATE
+ngày I-DATE
+2 I-DATE
+đêm I-DATE
+giá O
+bao_nhiêu O
+
+có O
+lịch_trình O
+tour O
+Nha_Trang B-LOC
+không O
+
+tôi O
+cần O
+tour O
+Hà_Giang B-LOC
+vào O
+cuối B-DATE
+tuần I-DATE
+
+tour O
+miền B-LOC
+Tây I-LOC
+2 B-DATE
+ngày I-DATE
+khởi_hành O
+khi O
+nào O
+
+có O
+tour O
+du_lịch O
+nào O
+khởi_hành O
+từ O
+Hà_Nội B-LOC
+không O
+
+muốn O
+đi O
+Đà_Lạt B-LOC
+cùng O
+gia_đình O
+dịp B-DATE
+lễ I-DATE
+
+tôi O
+muốn O
+biết O
+giá O
+tour O
+Cần_Thơ B-LOC
+tháng B-DATE
+6 I-DATE
+
+có O
+tour O
+nào O
+kết_hợp O
+giữa O
+Huế B-LOC
+và O
+Hội_An B-LOC
+không O
+
+tour O
+nước_ngoài B-LOC
+gần O
+đây O
+có O
+gì O
+hấp_dẫn O
+
+tour O
+Singapore B-LOC
+khởi_hành O
+ngày B-DATE
+1 I-DATE
+tháng I-DATE
+7 I-DATE
+còn O
+chỗ O
+không O
+
+mình O
+cần O
+tour O
+biển O
+Nha_Trang B-LOC
+vào O
+tháng B-DATE
+8 I-DATE
+
+có O
+tour O
+nào O
+đi O
+Phan_Thiết B-LOC
+dịp B-DATE
+Tết I-DATE
+không O
+
+tour O
+Côn_Đảo B-LOC
+hiện_tại O
+có O
+ưu_đãi O
+gì O
+không O
+
+tôi O
+muốn O
+đặt O
+tour O
+Hạ_Long B-LOC
+1 B-DATE
+ngày I-DATE
+
+tour O
+khám_phá O
+đảo O
+Lý_Sơn B-LOC
+có O
+gì O
+đặc_biệt O
+
+tour O
+miền B-LOC
+Trung I-LOC
+5 B-DATE
+ngày I-DATE
+giá O
+bao_nhiêu O
+
+tour O
+đi O
+Cà_Mau B-LOC
+còn O
+nhận O
+khách O
+không O
+
+có O
+tour O
+nào O
+giá O
+dưới O
+3 B-PRICE
+triệu I-PRICE
+không O
+
+tour O
+gia_đình O
+vào O
+dịp B-DATE
+hè I-DATE
+có O
+khuyến_mãi O
+gì O
+không O
+
+đi O
+Quy_Nhơn B-LOC
+nên O
+chọn O
+tour O
+mấy O
+ngày O
+là O
+hợp_lý O
+
+tôi O
+muốn O
+tìm O
+tour O
+du_lịch O
+phù_hợp O
+với O
+người O
+lớn_tuổi O
+
+tour O
+tháng B-DATE
+9 I-DATE
+đi O
+đâu O
+là O
+hợp_lý O
+
+tôi O
+muốn O
+đi O
+Mộc_Châu B-LOC
+ngắm O
+hoa O
+cải O
+
+tour O
+Đà_Lạt B-LOC
+cho O
+cặp O
+đôi O
+có O
+gì O
+lãng_mạn O
+
+tôi O
+muốn O
+đi O
+Phú_Quốc B-LOC
+từ O
+Sài_Gòn B-LOC
+
+tour O
+Hà_Nội B-LOC
+Hạ_Long B-LOC
+Ninh_Bình B-LOC
+có O
+không O
+
+có O
+tour O
+tham_quan O
+di_tích O
+lịch_sử O
+nào O
+không O
+
+tôi O  
+muốn O  
+tìm O  
+tour O  
+đi O  
+Phú_Quốc B-LOC  
+giá O  
+khoảng B-PRICE  
+4 I-PRICE  
+triệu I-PRICE  
+
+có O  
+tour O  
+nào O  
+đi O  
+Đà_Lạt B-LOC  
+dưới B-PRICE  
+3 I-PRICE  
+triệu I-PRICE  
+không O  
+
+tour O  
+Sapa B-LOC  
+5 B-DATE  
+ngày I-DATE  
+4 I-DATE  
+đêm I-DATE  
+giá O  
+bao_nhiêu O  
+
+mình O  
+cần O  
+tour O  
+Nha_Trang B-LOC  
+giá O  
+2 B-PRICE  
+triệu I-PRICE  
+rưỡi I-PRICE  
+
+tour O  
+miền O  
+Trung B-LOC  
+kết_hợp O  
+Huế B-LOC  
+và O  
+Đà_Nẵng B-LOC  
+giá O  
+5 B-PRICE  
+triệu I-PRICE  
+
+có O  
+tour O  
+đi O  
+Đà_Nẵng B-LOC  
+Hội_An B-LOC  
+vào O  
+tháng B-DATE  
+7 I-DATE  
+không O  
+
+tôi O  
+muốn O  
+đi O  
+Hạ_Long B-LOC  
+với O  
+giá O  
+dưới B-PRICE  
+2 I-PRICE  
+triệu I-PRICE  
+
+tour O  
+Côn_Đảo B-LOC  
+hiện_tại O  
+có O  
+giá O  
+tốt O  
+không O  
+
+tour O  
+3 B-DATE  
+ngày I-DATE  
+2 I-DATE  
+đêm I-DATE  
+ở O  
+Cần_Thơ B-LOC  
+giá O  
+2 B-PRICE  
+triệu I-PRICE  
+
+tour O  
+đi O  
+đảo O  
+Nam_Du B-LOC  
+giá O  
+rẻ O  
+nhất O  
+bao_nhiêu O  
+
+tôi O  
+quan_tâm O  
+tour O  
+du_lịch O  
+Phan_Thiết B-LOC  
+3 B-PRICE  
+triệu I-PRICE  
+
+tour O  
+Ninh_Bình B-LOC  
+Tràng_An B-LOC  
+giá O  
+khoảng B-PRICE  
+1.5 I-PRICE  
+triệu I-PRICE  
+
+có O  
+tour O  
+Hà_Nội B-LOC  
+- O  
+Mộc_Châu B-LOC  
+- O  
+Sơn_La B-LOC  
+không O  
+
+tour O  
+Lý_Sơn B-LOC  
+hiện O  
+có O  
+giá O  
+ưu_đãi O  
+gì O  
+không O  
+
+mình O  
+muốn O  
+tour O  
+5 B-PRICE  
+triệu I-PRICE  
+đi O  
+Huế B-LOC  
+hoặc O  
+Đà_Lạt B-LOC  
+
+đặt O  
+tour O  
+nước_ngoài O  
+như O  
+Thái_Lan B-LOC  
+giá O  
+6 B-PRICE  
+triệu I-PRICE  
+
+tour O  
+nghỉ_dưỡng O  
+ở O  
+Phú_Yên B-LOC  
+giá O  
+thế_nào O  
+
+tôi O  
+cần O  
+tour O  
+từ O  
+TP. B-LOC  
+HCM I-LOC  
+đi O  
+Hà_Giang B-LOC  
+5 B-PRICE  
+triệu I-PRICE  
+
+tour O  
+Bà B-LOC  
+Nà_Hills I-LOC  
+1 B-DATE  
+ngày I-DATE  
+giá O  
+bao_nhiêu O  
+
+đi O  
+Quy_Nhơn B-LOC  
+với O  
+tour O  
+trọn_gói O  
+dưới B-PRICE  
+4 I-PRICE  
+triệu I-PRICE  
+
+tour O  
+Cà_Mau B-LOC  
+2 B-DATE  
+ngày I-DATE  
+có O  
+giá O  
+dưới B-PRICE  
+3 I-PRICE  
+triệu I-PRICE  
+không O  
+
+tôi O  
+muốn O  
+tour O  
+Vũng_Tàu B-LOC  
+cuối B-DATE  
+tuần I-DATE  
+giá O  
+rẻ O  
+
+tour O  
+Hà_Nội B-LOC  
+- O  
+Tam_Đảo B-LOC  
+2 B-DATE  
+ngày I-DATE  
+giá O  
+bao_nhiêu O  
+
+có O  
+tour O  
+khám_phá O  
+Tây_Bắc B-LOC  
+với O  
+giá O  
+6 B-PRICE  
+triệu I-PRICE  
+không O  
+
+tour O  
+đi O  
+Đắk_Lắk B-LOC  
+hoặc O  
+Gia_Lai B-LOC  
+trong O  
+4 B-DATE  
+ngày I-DATE  
+
+muốn O  
+tìm O  
+tour O  
+du_lịch O  
+Hà_Nội B-LOC  
+tháng B-DATE  
+12 I-DATE  
+
+tour O  
+Phan_Rang B-LOC  
+- O  
+Tháp_Chàm B-LOC  
+giá O  
+dưới B-PRICE  
+2 I-PRICE  
+triệu I-PRICE  
+
+tôi O  
+quan_tâm O  
+tour O  
+Phú_Quốc B-LOC  
+vào O  
+dịp B-DATE  
+lễ I-DATE  
+giá O  
+tốt O  
+
+tour O  
+miền O  
+Tây B-LOC  
+3 B-DATE  
+ngày I-DATE  
+giá O  
+tầm B-PRICE  
+3 I-PRICE  
+triệu I-PRICE  
+có O  
+không O  
