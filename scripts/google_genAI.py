@@ -16,15 +16,3 @@ def get_genai_response(prompt):
     return cleaned_response
     # Initialize the GenAI client with your API
 
-def respond_out_of_scope(prompt):
-    """
-    Function to get a response from Google GenAI using the provided prompt.
-    """
-    client = genai.Client(api_key="AIzaSyC_ylU914dmAznodJZquUgpklV1yfOAqCM")
-
-    response = client.models.generate_content(
-        model="gemini-2.0-flash", config=types.GenerateContentConfig(
-        system_instruction="Bạn là một trợ lý ảo thông minh của một công ty du lịch, hãy trả lời câu hỏi của người dùng một cách tự nhiên, chính xác và chuyên nghiệp.",),
-        contents=prompt
-    )
-    return response.text
