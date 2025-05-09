@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 .venv/
 
 scripts/models/
 scripts/phobert_intent_finetuned/
+=======
+.venv/
+>>>>>>> 132af67849b1fbcae80c94a1ca5d625465737538

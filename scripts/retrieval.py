@@ -4,7 +4,7 @@ import numpy as np
 from sentence_transformers import SentenceTransformer
 from google import genai
 from google.genai import types
-from scripts.extract_location import extract_info
+# from scripts.extract_location import extract_info
 # from fastapi import FastAPI, HTTPException
 # from pydantic import BaseModel
 # import uvicorn
@@ -79,7 +79,7 @@ if __name__ == "__main__":
         
         # Lấy context từ pipeline
         context = pipeline.get_retrieved_context(user_query, top_k=1)
-        extracted_info = extract_info(context)
+        # extracted_info = extract_info(context)
         
         response = client.models.generate_content(
             model="gemini-1.5-flash", 
