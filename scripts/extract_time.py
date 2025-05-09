@@ -12,15 +12,15 @@ def extract_time(query):
         return date_obj.strftime("%Y-%m-%d")
     return "None"
 
-# Test
-queries = [
-    "tôi muốn đặt tour vào tháng 3",
-    "tôi muốn đặt tour đi xuất phát từ ngày 3 tháng 5",
-    "tôi muốn đi vào 3/5",
-    "tôi muốn đặt tour ngày mai",
-    "tôi muốn đặt tour tuần sau",  # Có thể không nhận diện chính xác
-    "tôi muốn đặt tour tháng sau"  # Có thể không nhận diện chính xác
-]
+# # Test
+# queries = [
+#     "tôi muốn đặt tour đi đà lạt vào tháng 7",
+#     "tôi muốn đặt tour đi xuất phát từ ngày 3 tháng 5",
+#     "tôi muốn đi vào 3/5",
+#     "tôi muốn đặt tour ngày mai",
+#     "tôi muốn đặt tour tuần sau",  # Có thể không nhận diện chính xác
+#     "tôi muốn đặt tour tháng sau"  # Có thể không nhận diện chính xác
+# ]
 
 # print(search_dates("tôi muốn đặt tour đi xuất phát từ ngày 3 tháng 5", languages=['vi']))
 # for q in queries:

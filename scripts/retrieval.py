@@ -45,8 +45,8 @@ class RetrievalPipeline:
         for idx in indices[0]:
             if idx < len(self.metadata):
                 item = self.metadata[idx]
-                context_lines.append(f"Q: {item['question']}\nA: {item['answer']}")
-        print("Context lines :", context_lines)
+                context_lines.append(f"{item['answer']}")
+        # print("Context lines :", context_lines)
         return "\n---\n".join(context_lines) if context_lines else ""
 
 
