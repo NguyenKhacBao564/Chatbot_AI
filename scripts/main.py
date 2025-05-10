@@ -60,10 +60,14 @@ class TourRetrievalPipeline:
     """Pipeline để tìm kiếm và trả lời thông tin tour du lịch."""
     INTENT_LABELS = {
         0: "find_tour_with_location",
-        1: "find_tour_with_location_and_time",
-        2: "find_tour_with_location_and_price",
-        3: "out_of_scope"
-    }
+        1: "find_tour_with_time",
+        2: "find_tour_with_price",
+        3: "find_tour_with_location_and_time",
+        4: "find_tour_with_location_and_price",
+        5: "find_tour_with_time_and_price",
+        6: "find_with_all",
+        7: "out_of_scope"
+     }
 
     def __init__(self, index_file="faq_index.faiss", metadata_file="faq_metadata.json"):
         # Load Faiss index và metadata
@@ -79,7 +83,7 @@ class TourRetrievalPipeline:
         model_intent_path = os.path.join(current_dir, "phobert_intent_finetuned")
         self.intent_tokenizer = AutoTokenizer.from_pretrained(model_intent_path)
         self.intent_model = AutoModelForSequenceClassification.from_pretrained(model_intent_path)
-        self.intent_labels = {0: "find_tour_with_location", 1: "find_tour_with_location_and_time", 2: "find_tour_with_location_and_price", 3: "out_of_scope"}
+        # self.intent_labels = {0: "find_tour_with_location", 1: "find_tour_with_location_and_time", 2: "find_tour_with_location_and_price", 3: "out_of_scope"}
 
 
         jar_path = os.path.join(current_dir, "VnCoreNLP-1.1.1.jar")
@@ -109,39 +113,22 @@ class TourRetrievalPipeline:
         time = session["time"]
         price = session["price"]
 
-        # if user_id not in sessions:
-        #     self.sessions[user_id] = {
-        #         "location": None, "time": None, "price": None,
-        #     }
 
-        
-
-        # # Tokenize bằng VnCoreNLP
-        # tokens = self.vncorenlp.tokenize(query)
-        # tokens = [word for sentence in tokens for word in sentence]
-        # logger.debug(f"Tokens: {tokens}")
-
-        # # Trích xuất thực thể bằng PhoBERT NER
-        # query_segmented = " ".join(tokens)
-        # print("query_segmented: ", query_segmented)
-        # entities = self.ner_pipeline(query)
-        # logger.debug(f"Entities: {entities}")
-
-        if intent in ["find_tour_with_location", "find_tour_with_location_and_time", "find_tour_with_location_and_price"]:
+        if intent in ["find_tour_with_location", "find_tour_with_location_and_time", "find_tour_with_location_and_price", "find_with_all"]:
             extracted_location = extract_location(query)
             if extracted_location != "None":
                 location = extracted_location
                 session["location"] = location
                 logger.debug(f"Extracted location: {location}")
 
-        if intent == "find_tour_with_location_and_time":
+        if intent in  ["find_tour_with_location_and_time", "find_tour_with_time", "find_tour_with_time_and_price", "find_with_all"]:
             extracted_time = extract_time(query)
             if extracted_time != "None":
                 time = extracted_time
                 session["time"] = time
                 logger.debug(f"Extracted time: {time}")
 
-        if intent == "find_tour_with_location_and_price":
+        if intent in ["find_tour_with_location_and_price", "find_tour_with_price", "find_tour_with_time_and_price", "find_with_all"]:
             extracted_price = extract_price_vn(query)
             if extracted_price != "None":
                 price = extracted_price
@@ -175,6 +162,7 @@ class TourRetrievalPipeline:
 
     def get_tour_response(self, query, user_id="default_user"):
         intent = self.extract_intent(query)
+        print("intent: ", intent)
         if intent == "out_of_scope":
             faq_response = self.get_faq_response(query)
             return {

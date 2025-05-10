@@ -146,6 +146,12 @@ query_templates_location_price = [
     "Tour đi {location} {price} có gì không?",
     "Gợi ý tour {location} khoảng {price} giúp tôi",
     "Tôi muốn đi {location} với chi phí {price}"
+
+
+
+
+
+    
 ]
 
 query_templates_out_of_scope = [

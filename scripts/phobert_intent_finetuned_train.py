@@ -14,10 +14,10 @@ vncorenlp = VnCoreNLP(jar_path, annotators="wseg", max_heap_size='-Xmx2g')
 # Tải tokenizer và mô hình PhoBERT cơ bản
 model_name = "vinai/phobert-base"
 tokenizer = AutoTokenizer.from_pretrained(model_name)
-model = AutoModelForSequenceClassification.from_pretrained(model_name, num_labels=4)  # 4 ý định
+model = AutoModelForSequenceClassification.from_pretrained(model_name, num_labels=8)  # 4 ý định
 
 # Đọc dữ liệu huấn luyện
-with open("extended_intent_train_data.json", "r", encoding="utf-8") as f:
+with open("extended_intent_train_data_v2.json", "r", encoding="utf-8") as f:
     data = json.load(f)
 
 # Hàm tiền xử lý dữ liệu đầu vào
@@ -34,9 +34,13 @@ def prepare_data(data, max_length=128):
     labels = []
     intent_mapping = {
         "find_tour_with_location": 0,
-        "find_tour_with_location_and_time": 1,
-        "find_tour_with_location_and_price": 2,
-        "out_of_scope": 3
+        "find_tour_with_time": 1,
+        "find_tour_with_price": 2,
+        "find_tour_with_location_and_time": 3,
+        "find_tour_with_location_and_price": 4,
+        "find_tour_with_time_and_price": 5,
+        "find_with_all": 6,
+        "out_of_scope": 7
     }
 
     for item in data:
