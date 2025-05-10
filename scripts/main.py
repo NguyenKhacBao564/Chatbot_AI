@@ -149,7 +149,7 @@ class TourRetrievalPipeline:
             respond = self.retrievalPipeline.get_retrieved_context(query, top_k=k)
             response_text = get_genai_response(
                 "Kiểm tra xem câu query này: '" + query + "' và câu trả lời này: '" + respond + 
-                "' có phù hợp không, nếu không thì trả lời lại một cách tự nhiên câu hỏi của người dùng mà không cần sử dụng thông tin trong câu trả lời, chỉ cần trả lời lại một cách tự nhiên thôi nhé"
+                "' có phù hợp không, nếu phù hợp thì trả lời y như câu trả lời đó, nếu không thì chỉ cần trả lời là không thể trả lời câu hỏi này, và hỏi xem khách hàng có muốn hỏi về tour không? "
             )
             return {
                 "response": response_text,

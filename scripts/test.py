@@ -6,7 +6,11 @@
 # import json
 # import re
 # import numpy as np
-
+import torch
+print(torch.__version__)  # Phiên bản PyTorch, ví dụ: 2.5.0+cu124
+print(torch.cuda.is_available())  # Phải trả về True
+print(torch.cuda.get_device_name(0))  # Phải hiển thị "NVIDIA GeForce RTX 4060"
+print(torch.version.cuda)  # Phải hiển thị phiên bản CUDA, ví dụ: 12.4
 
 # # Khởi tạo VnCoreNLP
 # try:

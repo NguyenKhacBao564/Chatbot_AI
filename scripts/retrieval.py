@@ -4,6 +4,8 @@ import numpy as np
 from sentence_transformers import SentenceTransformer
 from google import genai
 from google.genai import types
+
+
 # from scripts.extract_location import extract_info
 # from fastapi import FastAPI, HTTPException
 # from pydantic import BaseModel

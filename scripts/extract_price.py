@@ -52,17 +52,17 @@ def extract_price_vn(query):
     #     return "Không tìm thấy thông tin giá tiền trong câu của bạn."
 
 # # Test với các trường hợp mở rộng
-queries = [
-    "tôi muốn đi Phú yên vào ngày 22 tháng 9 Mua điện thoại giá 5 triệu đồng",
-    "Cái áo này 200 nghìn",
-    "Xe máy giá 45.5 triệu",
-    "Nhà giá 2 tỷ đồng",
-    "Laptop 500k",
-    "Điện thoại 1tr5",
-    "Máy tính khoảng 2 triệu rưỡi",
-    "Không có giá"
-]
+# queries = [
+#     "tôi muốn đi Phú yên vào ngày 22 tháng 9 Mua điện thoại giá 5 triệu đồng",
+#     "Cái áo này 200 nghìn",
+#     "Xe máy giá 45.5 triệu",
+#     "Nhà giá 2 tỷ đồng",
+#     "Laptop 500k",
+#     "Điện thoại 1tr5",
+#     "Máy tính khoảng 2 triệu rưỡi",
+#     "Không có giá"
+# ]
 
-for query in queries:
-    print(f"Query: {query}")
-    print(f"Response: {extract_price_vn(query)}\n")
+# for query in queries:
+#     print(f"Query: {query}")
+#     print(f"Response: {extract_price_vn(query)}\n")

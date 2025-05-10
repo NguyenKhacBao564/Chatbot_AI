@@ -2,6 +2,10 @@ from datetime import datetime, timedelta
 from dateutil.relativedelta import relativedelta
 import re
 from dateparser.search import search_dates
+from datetime import date
+from google_genAI import get_genai_response
+
+TODAY = date.today()
 
 def extract_time(query):
     # Sử dụng dateparser để tìm ngày trong query
@@ -9,7 +13,19 @@ def extract_time(query):
     if result:
         # Lấy đối tượng datetime đầu tiên
         original_text, date_obj = result[0] # result[0] là tuple (datetime, text)
-        return date_obj.strftime("%Y-%m-%d")
+        # Chuyển đổi về định dạng YYYY-MM-DD
+        date_str = date_obj.strftime("%Y-%m-%d")
+        check_date =  get_genai_response("So sánh ngày tháng năm : '" + date_str + "' có phù hợp với ngày tháng năm trong yêu cầu: '" + query + "' này không?. "
+        "Biết hôm nay là: '" + str(TODAY) + "'. "
+        "Trả về 'YES' nếu phù hợp, nếu không phù hợp thì trả về ngày tháng năm theo như yêu cầu phù hợp định dạng YYYY-MM-DD. (chỉ trả về YES hoặc ngày tháng năm phù hợp định dạng YYYY-MM-DD không thêm bất cứ phản hồi nào cả)")
+        print("dateString: ", date_str)
+        print("check_date: ", check_date)
+
+        if "YES" in check_date:
+            return date_str
+        else:
+            return check_date
+
     return "None"
 
 # # Test
